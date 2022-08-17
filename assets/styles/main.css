@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'Gotham';
+    src: url("../fonts/GothamBold.ttf") format('truetype');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Gotham';
+    src: url("../fonts/GothamBook.ttf") format('truetype');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Gotham';
+    src: url("../fonts/GothamLight.ttf") format('truetype');
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Gotham';
+    src: url("../fonts/GothamMedium.ttf") format('truetype');
+    font-weight: 500;
+}
+
+:root {
+    --color-primary: #1F3564;
+    --color-secondary: #e92027;
+    --color-background: #f3f3f4;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--color-primary);
+    font-family: 'Gotham', 'Inter', sans-serif;;
+    font-weight: 400;
+}
+body {
+    background-color: var(--color-background);
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+h1, h2, h3 {
+    font-weight: 700;
+}
+h2 {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.9rem;
+    margin-bottom: 50px;
+}
+h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+
+.mt-80 {
+    margin-top: 80px !important;
+}
+
+@media screen and (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+@media screen and (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+@media screen and (min-width: 1300px) {
+    .container {
+        max-width: 1240px
+    }
+}
+
+@media screen and (max-width: 767px) {
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.6rem;
+    }
+} 
+

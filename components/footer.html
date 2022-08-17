@@ -1,0 +1,243 @@
+<style>
+.footer {
+    background-color: #fff;
+}
+.footer__container {
+    background-color: #1f3564;
+    border-radius: 0 200px 0 0;
+    padding: 50px 0;
+}
+.footer__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footer__col_right,
+.footer__col_left {
+    width: 50%;
+    max-width: 550px;
+}
+.footer__col_left {
+    display: flex;
+}
+.footer__col_left_logo {
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+.footer__col_left_logo_image {
+    width: 100%;
+    max-width: 130px;
+}
+.footer__col_left_description {
+    width: 80%;
+    padding: 10px;
+}
+.footer__button:hover,
+.footer__button:active,
+.footer__button:visited,
+.footer__button {
+    display: inline-block;
+    padding: 5px 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    margin-right: 10px;
+    font-weight: 700;
+}
+.footer__button__azul {
+    background-color: #0071ba;
+}
+.footer__button__azul_claro {
+    background-color: #29a9e0;
+}
+.footer__button__rojo {
+    background-color: #e92027;
+    margin-bottom: 20px;
+}
+.footer__text {
+    color: #fff;
+    margin: 20px 0;
+    font-size: .8rem;
+}
+.footer__social_link:hover,
+.footer__social_link:active,
+.footer__social_link:visited,
+.footer__social_link {
+    display: inline-block;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    padding: 8px;
+    text-align: center;
+}
+.footer__social_icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+.footer__col_right {
+    padding: 10px 0 0 30px;
+}
+.footer__form {
+    margin-top: 80px;
+}
+.footer__input_mail {
+    background: none;
+    outline: none;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    padding: 8px 20px;
+    color: #fff;
+    font-size: .9rem;
+    margin: 0 20px 10px 0;
+    max-width: 270px;
+    width: 100%;
+}
+.footer__input_submit {
+    background-color: #fff;
+    color: #1b2e57;
+    border: none;
+    outline: none;
+    padding: 9px 20px;
+    border-radius: 50px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.footer__nav {
+    margin-top: 80px;
+}
+.footer__list {
+    text-align: center;
+}
+.footer__list_item {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 5px 0;
+    margin-bottom: 5px;
+}
+.footer__list_item__link:hover,
+.footer__list_item__link:active,
+.footer__list_item__link:visited,
+.footer__list_item__link {
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: .9rem;
+}
+.footer__right {
+    text-align: center;
+    padding: 30px 0;
+}
+.footer__logo {
+    margin-bottom: 10px;
+}
+@media screen and (max-width: 1300px) {
+    .footer__button:hover, 
+    .footer__button:active, 
+    .footer__button:visited, 
+    .footer__button {
+        padding: 5px 17px;
+        margin-right: 5px;
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .footer__container {
+        border-radius: 0;
+    }
+    .footer__col_right, 
+    .footer__col_left {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .footer__col_left_description .footer__text.mt-80 {
+        margin-top: 30px !important;
+    }
+    .footer__col_left {
+        flex-wrap: wrap;
+    }
+    .footer__col_left_logo {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .footer__col_left_logo_image {
+        margin: 0 auto;
+    }
+    .footer__col_left_logo,
+    .footer__col_left_description {
+        width: 100%;
+    }
+    .footer__col_right {
+        margin-top: 50px;
+        padding-left: 0;
+    }
+    .footer__col_right,
+    .footer__col_left_description {
+        text-align: center;
+    }
+    .footer__button.footer__button__azul,
+    .footer__button.footer__button__rojo {
+        display: inline-block;
+        margin: 0 auto 10px;
+    }
+    .footer__form {
+        margin-top: 10px;
+    }
+}
+
+</style>
+
+<footer class="footer">
+    <div class="footer__container">
+        <div class="container">
+            <section class="footer__row">
+                <div class="footer__col_left">
+                    <div class="footer__col_left_logo">
+                        <img src="./assets/icons/remax-balloon.png" alt="Logo Remax" class="footer__col_left_logo_image">
+                    </div>
+                    <div class="footer__col_left_description">
+                        <a href="#" class="footer__button footer__button__azul">Abre tu Franquicia</a>
+                        <a href="#" class="footer__button footer__button__azul_claro">Unete a RE/MAX</a>
+                        <p class="footer__text mt-80">RE/MAX es una empresa multinacional, que permite Capacitar, Educar y relacionar a los Asesores y gestores de negocios con el mercado inmobiliario del Mundo, a través de su conocimiento y relaciones nacionales y extranjeras. Desde la primer oficina que abrió sus puertas en 1973 en Denver, Colorado, RE/MAX se ha convertido en una red global de bienes raíces de oficinas de propiedad de franquiciados que funciona con cerca de 90.000 asociados de ventas.</p>
+                        <a href="https://www.facebook.com/remaxrd" target="_blank" class="footer__social_link"><img src="./assets/icons/facebook.png" alt="Facebook" class="footer__social_icon"></a>
+                        <a href="#" target="_blank" class="footer__social_link"><img src="./assets/icons/whatsapp.png" alt="Whatsapp" class="footer__social_icon"></a>
+                        <a href="https://twitter.com/Remax_RD" target="_blank" width="20px" height="20px" class="footer__social_link"><img src="./assets/icons/twitter.png" alt="Twitter" class="footer__social_icon"></a>
+                        <a href="https://instagram.com/remax_rd?igshid=YmMyMTA2M2Y=" target="_blank" class="footer__social_link"><img src="./assets/icons/instagram-symbol.png" alt="Instagram" class="footer__social_icon"></a>
+                    </div>
+                </div>
+
+                <div class="footer__col_right">
+                    <a href="#" class="footer__button footer__button__rojo">REGISTRATE</a>
+                    <p class="footer__text">Mejora tu experiencia de búsqueda. Regístrate para que puedas guardar las propiedades de tu interés y recibir actualizaciones de las mismas.</p>
+
+                    <form action="" class="footer__form" method="post">
+                        <p class="footer__text">Suscribete y recibe las actualizaciones de nuevas propieades</p>
+                        <input type="email" name="email" id="" class="footer__input_mail" placeholder="Email"/>
+                        <input type="submit" class="footer__input_submit" value="SUSCRIBIR">
+                    </form>
+                </div>
+            </section>
+
+            <nav class="footer__nav">
+                <ul class="footer__list">
+                    <li class="footer__list_item"><a href="#" class="footer__list_item__link">Propiedades</a></li>
+                    <li class="footer__list_item"><a href="#" class="footer__list_item__link">Agentes</a></li>
+                    <li class="footer__list_item"><a href="#" class="footer__list_item__link">Franquicias</a></li>
+                    <li class="footer__list_item"><a href="#" class="footer__list_item__link">Servicios</a></li>
+                    <li class="footer__list_item"><a href="#" class="footer__list_item__link">Blog</a></li>
+                    <li class="footer__list_item"><a href="#" class="footer__list_item__link">Alquilar</a></li>
+                    <li class="footer__list_item"><a href="#" class="footer__list_item__link">Collection</a></li>
+                    <li class="footer__list_item"><a href="#" class="footer__list_item__link">Contáctanos</a></li>
+                    <li class="footer__list_item"><a href="#" class="footer__list_item__link">Comprar</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </div>
+    <div class="container">
+        <section class="footer__right">
+            <img src="./assets/icons/REMAX-logo.svg" alt="Logo Remax" class="footer__logo" width="200px">
+            <p class="footer__right_texy">Copyright © Todos los derechos reservados 2022, REMAX RD</p>
+        </section>
+    </div>
+</footer>

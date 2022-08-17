@@ -1,0 +1,117 @@
+<style>
+    .property_item {
+        display: inline-block;
+        max-width: 300px;
+        background-color: #fff;
+        border-radius: 18px;
+        overflow: hidden;
+        transition: box-shadow .4s;
+        margin-bottom: 30px;
+    }
+    .property_item:hover {
+        box-shadow: 0px 0px 15px 2px #0005;
+    }
+    .property_item__link,
+    .property_item__link:active,
+    .property_item__link:hover {
+        text-decoration: none;
+    }
+    .property_item__thumbnail {
+        width: 100%;
+        height: 180px;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+    }
+    .property_item__image {
+        width: 100%;
+        vertical-align: middle;
+    }
+    .property_item__label {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 45%;
+        text-align: center;
+        padding: 5px 0;
+        font-weight: 600;
+        font-size: .9rem;
+        text-transform: uppercase;
+    }
+    .property_item__label__exclusiva {
+        background-color: #e92027;
+        color: #fff;
+    }
+    .property_item__details {
+        padding: 10px 20px;
+    }
+    .property_item__description__light {
+        font-weight: 300;
+    }
+    .property_item__direction {
+        font-size: .8rem;
+        display: block;
+        margin-bottom: 20px;
+        color: #808080;
+    }
+    .property_item__type {
+        font-size: 1.4rem;
+        display: block;
+        font-weight: 300;
+    }
+    .property_item__price {
+        font-weight: 700;
+        display: block;
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+    }
+    .property_item__features {
+        list-style: none;
+        margin-bottom: 10px;
+    }
+    .property_item__feature {
+        display: inline-block;
+        margin-right: 10px;
+        font-size: .8rem;
+        color: #808080;
+        font-weight: 300;
+    }
+    .property_item__icon {
+        width: 50px;
+        max-width: 25px;
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+    .property_item__code {
+        display: block;
+        text-align: center;
+        color: #e92027;
+        font-weight: 600;
+        font-size: .9rem;
+    }
+</style>
+
+<div class="property_item">
+    <a href="#" class="property_item__link">
+        <div class="property_item__thumbnail">
+            <img src="/assets/images/propiedad1.jpg" class="property_item__image" alt="Propiedad en venta">
+            <span class="property_item__label property_item__label__exclusiva">Exclusivo</span>
+        </div>
+
+        <div class="property_item__details">
+            <h3 class="property_item__description">Casa <span class="property_item__description__light">San Juan</span></h3>
+            <span class="property_item__direction">Centro Del Pueblo, Río San Juan</span>
+            <span class="property_item__type">VENTA</span>
+            <span class="property_item__price">US$420,000</span>
+
+            <ul class="property_item__features">
+                <li class="property_item__feature"><img src="/assets/icons/icon_car_remaxrd.svg" class="property_item__icon" alt="ICON CAR"> 1</li>
+                <li class="property_item__feature"><img src="/assets/icons/icon_bathtub_remaxrd.svg" class="property_item__icon" alt="ICON BATHTUB"> 5</li>
+                <li class="property_item__feature"><img src="/assets/icons/icon_bed_remaxrd.svg" class="property_item__icon" alt="ICON BED"> 4</li>
+                <li class="property_item__feature"><img src="/assets/icons/icon_rule_remaxrd.svg" class="property_item__icon" alt="ICON RULE"> 400 M<sup>2</sup></li>
+            </ul>
+            
+            <span class="property_item__code">Cod. 123456</span>
+        </div>
+    </a>
+</div>

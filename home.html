@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Encuentra el hogar que siempre has deseado, o el lugar que se adapte a las necesidades de tu negocio. Nuestro equipo de agentes te asistirá.">
+        <meta name="keywords" content=" inmueble, remax rd, remax república dominicana, alquilar una casa, comprar una casa, comercialización de inmuebles, proyectos en construcción, beneficios de comprar en planos, préstamos hipotecarios, préstamos hipotecarios en república dominicana, franquicia remax, Propiedades destacadas, propiedades de Remax RD, propiedades de remax república dominicana, agente inmobliario, agencia inmobiliaria, propiedades en República Dominicana"/>
+        <title>RE/MAX República Dominicana</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/styles/main.css">
+        <link rel="stylesheet" href="./assets/styles/home.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="container header__container">
+                <div class="logo">
+                    <a href="#" class="logo__link">
+                        <img src="./assets/icons/REMAX-logo.svg" alt="Logo Re/max" class="logo_image" width="150px" />
+                    </a>
+                </div>
+
+                <nav class="navbar">
+                    <div class="navbar_desktop">
+                        <ul class="navbar_desktop__list_items">
+                            <li class="navbar_desktop__item"><a href="#" class="navbar_desktop__item_link">Comprar</a></li>
+                            <li class="navbar_desktop__item"><a href="#" class="navbar_desktop__item_link">Alquilar</a></li>
+                            <li class="navbar_desktop__item"><a href="#" class="navbar_desktop__item_link">Agencias / Agentes</a></li>
+                            <li class="navbar_desktop__item"><a href="#" class="navbar_desktop__item_link">Blog</a></li>
+                            <li class="navbar_desktop__item"><a href="#" class="navbar_desktop__item_link">Contáctanos</a></li>
+                        </ul>
+                        <div class="navbar_desktop__languaje">
+                            IDIOMA
+                            <a href="#" class="navbar_desktop__languaje_link">
+                                <img src="./assets/icons/dominican-republic-flag.jpg" alt="Bandera República Dominicana" class="navbar_desktop__languaje_icon">
+                            </a>
+                            <a href="#" class="navbar_desktop__languaje_link">
+                                <img src="./assets/icons/united-states-flag.jpg" alt="Bandera Estados Unidos" class="navbar_desktop__languaje_icon">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="navbar_mobile">
+                        <span class="navbar_mobile__toggle_menu">
+                            <img src="./assets/icons/menu.svg" alt="Bottom de menú" class="navbar_mobile__button" width="30px" height="30px">
+                        </span>
+                    </div>
+                </nav>
+
+                <button class="header__register_btn">Regístrate</button>
+            </div>
+        </header>
+
+        <section class="cover">
+            <div class="cover__background"></div>
+            <div class="container cover__container">
+                <div class="cover__content" style="background-image: url('./assets/images/mid-century-modern-living-room-interior-design-with-monstera-tree.jpg');">
+                    <h1 class="cover__title">RE/MAX República Dominicana</h1>
+                    <p class="cover__subtitle">Busca tu Inmueble</p>
+
+                    <form action="" method="get" class="cover__search" id="cover_search">
+                        <div class="cover__status">
+                            <input type="radio" name="status" class="cover__input_radio" checked id="buy"/>
+                            <label for="buy" class="cover__label">QUIERO COMPRAR</label>
+                            <input type="radio" name="status" class="cover__input_radio" id="rent"/>
+                            <label for="rent" class="cover__label">QUIERO ALQUILAR</label>
+                        </div>
+
+                        <div class="cover__search_body">
+                            <label for="search_type" class="cover__search_body__label">
+                                ¿Que buscas?
+                                <input type="text" name="" placeholder="Apartamento, casa, terreno..." class="cover__input_text" id="search_type">
+                            </label>
+
+                            <label for="search_place" class="cover__search_body__label">
+                                ¿Donde?
+                                <input type="text" name="" placeholder="Buscar por código, ciudad, sector, dirección..." class="cover__input_text" id="search_place">
+                            </label>
+
+                            <button type="submit" class="cover__button_submit" form="cover_search"><img src="./assets/icons/loupe_remax_rd.svg" alt="Loupe icon" class="cover__button_submit__icon" width="35px" height="35px"/></button>
+                        </div>
+
+                        <button class="cover__button_filter"><img src="./assets/icons/filter_remax_rd.svg" alt="Filter icon" class="cover__button_filter__icon" width="11px" height="11px"/> FILTROS AVANZADOS</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <article class="properties_slider">
+            <div class="container">
+                <h2 class="properties_slider__title">PROPIEDADES <span class="properties_slider__title__light">DESTACADAS</span></h2>
+
+                <div class="property_item">
+                    <a href="#" class="property_item__link">
+                        <div class="property_item__thumbnail">
+                            <img src="./assets/images/propiedad1.jpg" class="property_item__image" alt="Propiedad en venta">
+                            <span class="property_item__label property_item__label__exclusiva">Exclusivo</span>
+                        </div>
+            
+                        <div class="property_item__details">
+                            <h3 class="property_item__description">Casa <span class="property_item__description__light">San Juan</span></h3>
+                            <span class="property_item__direction">Centro Del Pueblo, Río San Juan</span>
+                            <span class="property_item__type">VENTA</span>
+                            <span class="property_item__price">US$420,000</span>
+
+                            <ul class="property_item__features">
+                                <li class="property_item__feature"><img src="./assets/icons/icon_car_remaxrd.svg" class="property_item__icon" alt="ICON CAR"> 1</li>
+                                <li class="property_item__feature"><img src="./assets/icons/icon_bathtub_remaxrd.svg" class="property_item__icon" alt="ICON BATHTUB"> 5</li>
+                                <li class="property_item__feature"><img src="./assets/icons/icon_bed_remaxrd.svg" class="property_item__icon" alt="ICON BED"> 4</li>
+                                <li class="property_item__feature"><img src="./assets/icons/icon_rule_remaxrd.svg" class="property_item__icon" alt="ICON RULE"> 400 M<sup>2</sup></li>
+                            </ul>
+                            
+                            <span class="property_item__code">Cod. 123456</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="property_item">
+                    <a href="#" class="property_item__link">
+                        <div class="property_item__thumbnail">
+                            <img src="./assets/images/propiedad1.jpg" class="property_item__image" alt="Propiedad en venta">
+                            <span class="property_item__label property_item__label__exclusiva">Exclusivo</span>
+                        </div>
+            
+                        <div class="property_item__details">
+                            <h3 class="property_item__description">Casa <span class="property_item__description__light">San Juan</span></h3>
+                            <span class="property_item__direction">Centro Del Pueblo, Río San Juan</span>
+                            <span class="property_item__type">VENTA</span>
+                            <span class="property_item__price">US$420,000</span>
+
+                            <ul class="property_item__features">
+                                <li class="property_item__feature"><img src="./assets/icons/icon_car_remaxrd.svg" class="property_item__icon" alt="ICON CAR"> 1</li>
+                                <li class="property_item__feature"><img src="./assets/icons/icon_bathtub_remaxrd.svg" class="property_item__icon" alt="ICON BATHTUB"> 5</li>
+                                <li class="property_item__feature"><img src="./assets/icons/icon_bed_remaxrd.svg" class="property_item__icon" alt="ICON BED"> 4</li>
+                                <li class="property_item__feature"><img src="./assets/icons/icon_rule_remaxrd.svg" class="property_item__icon" alt="ICON RULE"> 400 M<sup>2</sup></li>
+                            </ul>
+                            
+                            <span class="property_item__code">Cod. 123456</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="property_item">
+                    <a href="#" class="property_item__link">
+                        <div class="property_item__thumbnail">
+                            <img src="./assets/images/propiedad1.jpg" class="property_item__image" alt="Propiedad en venta">
+                            <span class="property_item__label property_item__label__exclusiva">Exclusivo</span>
+                        </div>
+            
+                        <div class="property_item__details">
+                            <h3 class="property_item__description">Casa <span class="property_item__description__light">San Juan</span></h3>
+                            <span class="property_item__direction">Centro Del Pueblo, Río San Juan</span>
+                            <span class="property_item__type">VENTA</span>
+                            <span class="property_item__price">US$420,000</span>
+
+                            <ul class="property_item__features">
+                                <li class="property_item__feature"><img src="./assets/icons/icon_car_remaxrd.svg" class="property_item__icon" alt="ICON CAR"> 1</li>
+                                <li class="property_item__feature"><img src="./assets/icons/icon_bathtub_remaxrd.svg" class="property_item__icon" alt="ICON BATHTUB"> 5</li>
+                                <li class="property_item__feature"><img src="./assets/icons/icon_bed_remaxrd.svg" class="property_item__icon" alt="ICON BED"> 4</li>
+                                <li class="property_item__feature"><img src="./assets/icons/icon_rule_remaxrd.svg" class="property_item__icon" alt="ICON RULE"> 400 M<sup>2</sup></li>
+                            </ul>
+                            
+                            <span class="property_item__code">Cod. 123456</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="property_item">
+                    <a href="#" class="property_item__link">
+                        <div class="property_item__thumbnail">
+                            <img src="./assets/images/propiedad1.jpg" class="property_item__image" alt="Propiedad en venta">
+                            <span class="property_item__label property_item__label__exclusiva">Exclusivo</span>
+                        </div>
+            
+                        <div class="property_item__details">
+                            <h3 class="property_item__description">Casa <span class="property_item__description__light">San Juan</span></h3>
+                            <span class="property_item__direction">Centro Del Pueblo, Río San Juan</span>
+                            <span class="property_item__type">VENTA</span>
+                            <span class="property_item__price">US$420,000</span>
+
+                            <ul class="property_item__features">
+                                <li class="property_item__feature"><img src="./assets/icons/icon_car_remaxrd.svg" class="property_item__icon" alt="ICON CAR"> 1</li>
+                                <li class="property_item__feature"><img src="./assets/icons/icon_bathtub_remaxrd.svg" class="property_item__icon" alt="ICON BATHTUB"> 5</li>
+                                <li class="property_item__feature"><img src="./assets/icons/icon_bed_remaxrd.svg" class="property_item__icon" alt="ICON BED"> 4</li>
+                                <li class="property_item__feature"><img src="./assets/icons/icon_rule_remaxrd.svg" class="property_item__icon" alt="ICON RULE"> 400 M<sup>2</sup></li>
+                            </ul>
+                            
+                            <span class="property_item__code">Cod. 123456</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </article>
+
+        <article class="collection">
+            <div class="container">
+                <section class="colletion__header">
+                    <div class="collection__logo">
+                        <img src="./assets/icons/logo_remax_collection.png" alt="Logo Remax Collection" class="collection__logo_image">
+                    </div>
+                    <div class="collection__description">
+                        <h2 class="collection__title">The RE/MAX Collection</h2>
+                        <p class="collection__text">El equipo de RE/MAX COLLECTION está altamente capacitado para superar las expectativas del mercado Premium de propiedades y poder ayudarte en la comercialización de inmuebles exclusivos.</p>
+                        <p class="collection__text">Nuestro equipo podrá asesorarte tanto en la venta como en la compra de tu próximo inmueble de lujo.</p>
+                    </div>
+                </section>
+
+                <section class="collection__slider">
+                    <div class="collection__card">
+                        <a href="#" class="collection__card_link">
+                            <span class="collection__card_label">COLLECTION</span>
+                            <div class="collection__thumbnail">
+                                <img src="./assets/images/propiedad1.jpg" alt="Collection Image" class="collection__thumbnail_image">
+                            </div>
+                            <span class="collection__card__description">Townhouse <span class="collection__card__description_light">Punta Cana</span></span>
+                        </a>
+                    </div>
+                   
+                    <div class="collection__card">
+                        <a href="#" class="collection__card_link">
+                            <span class="collection__card_label">COLLECTION</span>
+                            <div class="collection__thumbnail">
+                                <img src="./assets/images/propiedad1.jpg" alt="Collection Image" class="collection__thumbnail_image">
+                            </div>
+                            <span class="collection__card__description">Townhouse <span class="collection__card__description_light">Punta Cana</span></span>
+                        </a>
+                    </div>
+
+                    <div class="collection__card">
+                        <a href="#" class="collection__card_link">
+                            <span class="collection__card_label">COLLECTION</span>
+                            <div class="collection__thumbnail">
+                                <img src="./assets/images/propiedad1.jpg" alt="Collection Image" class="collection__thumbnail_image">
+                            </div>
+                            <span class="collection__card__description">Townhouse <span class="collection__card__description_light">Punta Cana</span></span>
+                        </a>
+                    </div>
+
+                    <div class="collection__card">
+                        <a href="#" class="collection__card_link">
+                            <span class="collection__card_label">COLLECTION</span>
+                            <div class="collection__thumbnail">
+                                <img src="./assets/images/propiedad1.jpg" alt="Collection Image" class="collection__thumbnail_image">
+                            </div>
+                            <span class="collection__card__description">Townhouse <span class="collection__card__description_light">Punta Cana</span></span>
+                        </a>
+                    </div>
+                </section>
+
+                <section class="colletion__footer">
+                    <button class="collection__button">VER MÁS PROPIEDADES COLLECTION</button>
+                </section>
+            </div>
+        </article>
+
+        <article class="projects" style="background-image: url(./assets/images/projects_remax_rd.jpg);">
+            <section class="projects__details">
+                <h2 class="projects__title">PROYECTOS</h2>
+                <p class="projects__text">Encuentra propiedades en construcción.</p>
+
+                <h3 class="projects__list_title">Beneficios de comprar en planos:</h3>
+                <ul class="projects__list">
+                    <li class="projects__list_item">Mayor economía que comprar una propiedad terminada.</li>
+                    <li class="projects__list_item">Puedes hacer modificaciones en el diseño.</li>
+                    <li class="projects__list_item">Ganar plusvalia.</li>
+                    <li class="projects__list_item">La inversión crece a medida que se va desarrollando la edificación.</li>
+                    <li class="projects__list_item">Se permiten distintas formas de pago mientras el proyecto aún está en construcción.</li>
+                </ul>
+
+                <a href="#" class="projects__link">VER PROYECTOS</a>
+            </section>
+        </article>
+
+        <article class="franchise" style="background-image: url('./assets/images/agentes_remax.jpg');">
+            <div class="container">
+                <div class="franchise__details">
+                    <h2 class="franchise__title">FRANQUICIAS <span class="franchise__title_light">RE/MAX</span></h2>
+                    <p class="franchise__text">RE/MAX es la red inmobiliaria #1 a nivel mundial, con más de 138mil agentes, distribuidos en 110 países.</p>
+                    <p class="franchise__text">Con una franquicia RE/MAX tienes la oportunidad de emprender en tu propio negocio, contando con el apoyo de más de 40 años de experiencia, reconocimiento global desde el inicio y mas de 17 años de experiencia a nivel nacional.</p>
+                    <div class="franchise__btn">
+                        <a href="#" class="franchise__btn_link">Abre tu Franquicia Aquí</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="articles">
+            <div class="container">
+                <h2 class="articles__title">ARTÍCULOS <span class="articles__title_light">RECIENTES</span></h2>
+                <section class="articles__cards">
+                    <div class="articles__card">
+                        <a href="#" class="articles__card_link">
+                            <div class="article__thumbnail">
+                                <img src="./assets/images/JnLiR0.png" alt="Miniatuta del articulo" class="article__thumbnail_image">
+                            </div>
+                            <h3 class="articles__card_title">Hábitos que te ayudarán a tener unas finanzas más saludables</h3>
+                            <p class="articles__extract">Los hábitos financieros saludables, sin duda, le permitirán cumplir sus metas de ahorro, aprender a invertir en una vivienda, viajes, programas educativos o para emprender.</p>
+                        </a>
+                    </div>
+
+                    <div class="articles__card">
+                        <a href="#" class="articles__card_link">
+                            <div class="article__thumbnail">
+                                <img src="./assets/images/JnLiR0.png" alt="Miniatuta del articulo" class="article__thumbnail_image">
+                            </div>
+                            <h3 class="articles__card_title">Hábitos que te ayudarán a tener unas finanzas más saludables</h3>
+                            <p class="articles__extract">Los hábitos financieros saludables, sin duda, le permitirán cumplir sus metas de ahorro, aprender a invertir en una vivienda, viajes, programas educativos o para emprender.</p>
+                        </a>
+                    </div>
+
+                    <div class="articles__card">
+                        <a href="#" class="articles__card_link">
+                            <div class="article__thumbnail">
+                                <img src="./assets/images/JnLiR0.png" alt="Miniatuta del articulo" class="article__thumbnail_image">
+                            </div>
+                            <h3 class="articles__card_title">Hábitos que te ayudarán a tener unas finanzas más saludables</h3>
+                            <p class="articles__extract">Los hábitos financieros saludables, sin duda, le permitirán cumplir sus metas de ahorro, aprender a invertir en una vivienda, viajes, programas educativos o para emprender.</p>
+                        </a>
+                    </div>
+
+                    <div class="articles__card">
+                        <a href="#" class="articles__card_link">
+                            <div class="article__thumbnail">
+                                <img src="./assets/images/JnLiR0.png" alt="Miniatuta del articulo" class="article__thumbnail_image">
+                            </div>
+                            <h3 class="articles__card_title">Hábitos que te ayudarán a tener unas finanzas más saludables</h3>
+                            <p class="articles__extract">Los hábitos financieros saludables, sin duda, le permitirán cumplir sus metas de ahorro, aprender a invertir en una vivienda, viajes, programas educativos o para emprender.</p>
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </article>
+
+
+        <article class="lending">
+            <section class="lending__head">
+                <div class="container">
+                    <h2 class="lending__title">
+                        Préstamos
+                        <span class="lending__title_light">Hipotecarios:</span>
+                    </h2>
+                </div>
+            </section>
+
+            <section class="lending__body">
+                <div class="container">
+                    <p class="lending__text">Sólo tienes que preocuparte por elegir el hogar de tus sueños: RE/MAX República Dominicana te ayuda a gestionar tu préstamo hipotecario, no importa si vives o no en el país.</p>
+                    <p class="lending__text">Alianza con las principales instituciones financieras.</p>
+    
+                    <div class="lending__btn">
+                        <a href="#" class="lending__btn_link">Solicitar Préstamos</a>
+                    </div>                
+                </div>
+            </section>
+
+            <section class="lending__side">
+                <img src="./assets/images/pareja_remax_rd.png" alt="Imagen de costado" class="lending__side_image">
+            </section>
+        </article>
+
+        <article class="cities">
+            <div class="container cities__container">
+                <section class="cities__left_side">
+                    <img src="./assets/images/agents_remax_rd.png" alt="Agentes de Remax RD" class="cities__left_side__image">
+                </section>
+                <section class="cities__right_side">
+                    <h2 class="cities__title">CIUDADES <span class="cities__title_light">PARA EXPLORAR</span></h2>
+                    <div class="cities__slider">
+                        <div class="cities__card">
+                            <a href="#" class="cities__link">
+                                <img src="./assets/images/samana_remax_rd.png" alt="Samana" class="cities__card_image">
+                                <h3 class="cities__card_title">Samana</h3>
+                            </a>
+                        </div>
+
+                        <div class="cities__card">
+                            <a href="#" class="cities__link">
+                                <div class="cities__card_image" style="background-image: url('./assets/images/santo_domingo_remax_rd.png');"></div>
+                                <h3 class="cities__card_title">Santo Domingo</h3>
+                            </a>
+                        </div>
+
+                        <div class="cities__card">
+                            <a href="#" class="cities__link">
+                                <img src="./assets/images/punta_cana_remax_rd.png" alt="Puntan Cana" class="cities__card_image">
+                                <h3 class="cities__card_title">Punta Cana</h3>
+                            </a>
+                        </div>
+
+                        <div class="cities__card">
+                            <a href="#" class="cities__link">
+                                <img src="./assets/images/la_romana_remax_rd.png" alt="La Romana" class="cities__card_image">
+                                <h3 class="cities__card_title">La Romana</h3>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </article>
+
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="container">
+                    <section class="footer__row">
+                        <div class="footer__col_left">
+                            <div class="footer__col_left_logo">
+                                <img src="./assets/icons/remax-balloon.png" alt="Logo Remax" class="footer__col_left_logo_image">
+                            </div>
+                            <div class="footer__col_left_description">
+                                <a href="#" class="footer__button footer__button__azul">Abre tu Franquicia</a>
+                                <a href="#" class="footer__button footer__button__azul_claro">Unete a RE/MAX</a>
+                                <p class="footer__text mt-80">RE/MAX es una empresa multinacional, que permite Capacitar, Educar y relacionar a los Asesores y gestores de negocios con el mercado inmobiliario del Mundo, a través de su conocimiento y relaciones nacionales y extranjeras. Desde la primer oficina que abrió sus puertas en 1973 en Denver, Colorado, RE/MAX se ha convertido en una red global de bienes raíces de oficinas de propiedad de franquiciados que funciona con cerca de 90.000 asociados de ventas.</p>
+                                <a href="https://www.facebook.com/remaxrd" target="_blank" class="footer__social_link"><img src="./assets/icons/facebook.png" alt="Facebook" class="footer__social_icon"></a>
+                                <a href="#" target="_blank" class="footer__social_link"><img src="./assets/icons/whatsapp.png" alt="Whatsapp" class="footer__social_icon"></a>
+                                <a href="https://twitter.com/Remax_RD" target="_blank" width="20px" height="20px" class="footer__social_link"><img src="./assets/icons/twitter.png" alt="Twitter" class="footer__social_icon"></a>
+                                <a href="https://instagram.com/remax_rd?igshid=YmMyMTA2M2Y=" target="_blank" class="footer__social_link"><img src="./assets/icons/instagram-symbol.png" alt="Instagram" class="footer__social_icon"></a>
+                            </div>
+                        </div>
+    
+                        <div class="footer__col_right">
+                            <a href="#" class="footer__button footer__button__rojo">REGISTRATE</a>
+                            <p class="footer__text">Mejora tu experiencia de búsqueda. Regístrate para que puedas guardar las propiedades de tu interés y recibir actualizaciones de las mismas.</p>
+    
+                            <form action="" class="footer__form" method="post">
+                                <p class="footer__text">Suscribete y recibe las actualizaciones de nuevas propieades</p>
+                                <input type="email" name="email" id="" class="footer__input_mail" placeholder="Email"/>
+                                <input type="submit" class="footer__input_submit" value="SUSCRIBIR">
+                            </form>
+                        </div>
+                    </section>
+    
+                    <nav class="footer__nav">
+                        <ul class="footer__list">
+                            <li class="footer__list_item"><a href="#" class="footer__list_item__link">Propiedades</a></li>
+                            <li class="footer__list_item"><a href="#" class="footer__list_item__link">Agentes</a></li>
+                            <li class="footer__list_item"><a href="#" class="footer__list_item__link">Franquicias</a></li>
+                            <li class="footer__list_item"><a href="#" class="footer__list_item__link">Servicios</a></li>
+                            <li class="footer__list_item"><a href="#" class="footer__list_item__link">Blog</a></li>
+                            <li class="footer__list_item"><a href="#" class="footer__list_item__link">Alquilar</a></li>
+                            <li class="footer__list_item"><a href="#" class="footer__list_item__link">Collection</a></li>
+                            <li class="footer__list_item"><a href="#" class="footer__list_item__link">Contáctanos</a></li>
+                            <li class="footer__list_item"><a href="#" class="footer__list_item__link">Comprar</a></li>
+                        </ul>
+                    </nav>
+    
+                </div>
+            </div>
+            <div class="container">
+                <section class="footer__right">
+                    <img src="./assets/icons/REMAX-logo.svg" alt="Logo Remax" class="footer__logo" width="200px">
+                    <p class="footer__right_texy">Copyright © Todos los derechos reservados 2022, REMAX RD</p>
+                </section>
+            </div>
+        </footer>
+    </body>
+</html>
