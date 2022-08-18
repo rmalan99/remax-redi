@@ -399,7 +399,10 @@ button.header__register_btn {
     display: none;
 }
 .search__method {
-    min-width: 295px;
+    min-width: min-content;
+    border-radius: 0 0 16px 16px;
+    padding: 0;
+    background-color: #1F3564;
 }
 .search__label_method {
     padding-top: 25px;
@@ -512,6 +515,7 @@ button.header__register_btn {
     }
     .search__method {
         order: 1;
+        max-width: max-content;
     }
     .search__filter {
         order: 2;
@@ -550,4 +554,23 @@ button.header__register_btn {
     .search__content_result {
         grid-template-columns: 100%;
     }
+}
+
+/* GO TOP BUTTON */
+.go_top {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: #1F3564;
+    bottom: 10%;
+    right: 30px;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0px 0 4px 0 #fff8;
+}
+.go_top__image {
+    width: 20px;
+    height: 20px;
 }
