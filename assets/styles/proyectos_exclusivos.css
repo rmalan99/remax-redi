@@ -476,6 +476,7 @@ button.header__register_btn {
     min-height: 50px;
     border-radius: 0 0 16px 16px;
     cursor: pointer;
+    font-weight: 700;
 }
 .search__method,
 .search__status,
