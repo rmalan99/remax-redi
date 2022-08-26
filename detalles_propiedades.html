@@ -11,12 +11,12 @@
         <link rel="stylesheet" href="./assets/styles/main.css">
     </head>
     <body>
-        <!-- ************************** HEADER ************************** -->
+        <!-- ************************** NEW HEADER FOR COLLECTION PAGES ************************** -->
         <style>
             .header {
                 width: 100%;
                 background-color: #fff;
-                padding: 20px 0;
+                padding: 10px 0;
                 position: sticky;
                 top: 0;
                 z-index: 1000;
@@ -42,16 +42,40 @@
                 margin-right: 30px;
                 font-weight: 700;
             }
-            .logo__link,
-            .logo__link:hover,
-            .logo__link:active,
-            .logo__link:visited,
+            .header__logo {
+                background-color: #1F3564;
+                position: relative;
+                top: -10px;
+                height: 55px;
+                width: 251px;
+            }
+            .header__logo_link {
+                position: absolute;
+                background-color: #1f3564;
+                width: 100%;
+                height: 133px;
+                border-radius: 0px 0px 45px 45px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .header__logo_image {
+                width: 65%;
+                margin-top: -10px;
+            }
+            .header__logo_link,
+            .header__logo_link:hover,
+            .header__logo_link:active,
+            .header__logo_link:visited,
             .navbar_desktop__item_link,
             .navbar_desktop__item_link:hover,
             .navbar_desktop__item_link:active,
             .navbar_desktop__item_link:visited {
                 text-decoration: none;
                 color: inherit;
+            }
+            .navbar_desktop__item_link {
+                font-weight: 700;
             }
             .navbar_desktop__languaje {
                 border-left: 1px solid #000;
@@ -76,7 +100,7 @@
             button.header__register_btn {
                 position: absolute;
                 right: 10%;
-                top: calc(100% + 20px);
+                top: calc(100% + 10px);
                 background-color: #E92027;
                 color: #fff;
                 border: none;
@@ -97,20 +121,17 @@
         </style>
         <header class="header">
             <div class="container header__container">
-                <div class="logo">
-                    <a href="#" class="logo__link">
-                        <img src="./assets/icons/REMAX-logo.svg" alt="Logo Remax" class="logo_image" width="150px" />
+                <div class="header__logo">
+                    <a href="#" class="header__logo_link">
+                        <img src="./assets/icons/logo_remax_collection.png" alt="Logo Remax Coleecion" class="header__logo_image" width="150px" />
                     </a>
                 </div>
         
                 <nav class="navbar">
                     <div class="navbar_desktop">
                         <ul class="navbar_desktop__list_items">
-                            <li class="navbar_desktop__item"><a href="#" class="navbar_desktop__item_link">Comprar</a></li>
-                            <li class="navbar_desktop__item"><a href="#" class="navbar_desktop__item_link">Alquilar</a></li>
-                            <li class="navbar_desktop__item"><a href="#" class="navbar_desktop__item_link">Agencias / Agentes</a></li>
-                            <li class="navbar_desktop__item"><a href="#" class="navbar_desktop__item_link">Blog</a></li>
-                            <li class="navbar_desktop__item"><a href="#" class="navbar_desktop__item_link">Contáctanos</a></li>
+                            <li class="navbar_desktop__item"><a href="#" class="navbar_desktop__item_link">Volver a RE/MAX RD</a></li>
+                            <li class="navbar_desktop__item"><a href="#" class="navbar_desktop__item_link">Propiedades</a></li>
                         </ul>
                         <div class="navbar_desktop__languaje">
                             IDIOMA
@@ -533,7 +554,7 @@
                 .details__agent__btn_green {
                     background-color: #39B44A;
                 }
-                .details__agent__btn_grey {
+                .details__agent__btn_gray {
                     background-color: #989898;
                 }
 
@@ -654,10 +675,47 @@
                     </ul>
 
                     <a href="#" class="details__agent__btn details__agent__btn_green">WHATSAPP 809-553-4561</a>
-                    <a href="#" class="details__agent__btn details__agent__btn_grey">ENVIAR MENSAJE</a>
+                    <a href="#" class="details__agent__btn details__agent__btn_gray">ENVIAR MENSAJE</a>
                 </section>
             </article>
             <!-- ************************** END DETALLES ************************** -->
+
+            <!-- ************************** END SIMILAR COLLECTION BUTTON ************************** -->
+            <style>
+                .similar_collecion {
+                    width: 100%;
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .similar_collection__btn {
+                    background-color: #E92027;
+                    border-radius: 50px;
+                    display: flex;
+                    width: fit-content;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    color: #fff;
+                    height: 40px;
+                    padding: 0 23px;
+                    font-weight: 700;
+                    font-size: .938rem;
+                    text-align: center;
+                }
+                .similar_collection__btn,
+                .similar_collection__btn:active,
+                .similar_collection__btn:hover,
+                .similar_collection__btn:visited {
+                    text-decoration: none;
+                    color: #fff;
+                }
+            </style>
+            <section class="similar_collecion">
+                <a href="#" class="similar_collection__btn">VER MÁS PROPIEDADES COLLECTION SIMILARES</a>
+            </section>
+            <!-- ************************** END SIMILAR COLLECTION BUTTON ************************** -->
         </div>
 
 
@@ -665,7 +723,10 @@
         <style>
             .calculator {
                 background-color: #fff;
-                padding: 50px 0 130px;
+                padding: 100px 0 130px;
+            }
+            .calculator__title {
+                font-size: 1.45rem;
             }
             .calculator__title_light {
                 font-weight: 300;
