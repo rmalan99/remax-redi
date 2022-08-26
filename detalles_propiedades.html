@@ -161,22 +161,26 @@
                     width: 196px;
                     height: 47px;
                 }
-                .album__share,
-                .album__share:hover,
-                .album__share:active,
-                .album__share:visited {
+                .album__share {
                     background-color: #fff;
-                    color: #8C8C8C;
-                    /* padding: 20px 40px; */
                     border-radius: 20px 20px 0 0;
                     font-weight: 500;
                     font-size: .8rem;
-                    text-decoration: none;
                     position: absolute;
                     right: 0;
                     bottom: 0;
                     width: 237px;
                     height: 56px;
+                }
+                .album__share,
+                .album__share:hover,
+                .album__share:active,
+                .album__share:visited {
+                    text-decoration: none;
+                    color: #8C8C8C;
+                }
+                .album__share_text {
+                    color: #8C8C8C;
                 }
                 .album__share,
                 .album__code {
@@ -329,7 +333,7 @@
             <article class="album">
                 <section class="album__header">
                     <a href="#" class="album__code">Codigo: 123456</a>
-                    <a href="#" class="album__share"><span class="album__share_text">Compartir </span><img src="./assets/icons/icon_share_remaxrd.svg" alt="Icono Compartir" width="26px" height="27px" class="album__share_icon"></a>
+                    <a href="#" class="album__share"><span class="album__share_text">COMPARTIR </span><img src="./assets/icons/icon_share_remaxrd.svg" alt="Icono Compartir" width="26px" height="27px" class="album__share_icon"></a>
                 </section>
 
                 <section class="album__body">
@@ -913,7 +917,7 @@
                 width: 100%;
                 text-align: center;
                 text-transform: uppercase;
-                font-size: 1.9rem;
+                font-size: 1.45rem;
                 margin-bottom: 50px;
             }
             .properties_slider__title__light {
