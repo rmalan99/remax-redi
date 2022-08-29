@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>REMAX RD</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/styles/main.css">
+    </head>
+    <body>
+        <!-- ************************** HEADER ************************** -->
+        <style>
+            .header {
+                width: 100%;
+                background-color: #fff;
+                padding: 20px 0;
+                position: sticky;
+                top: 0;
+                z-index: 1000;
+                box-shadow: 1px 0px 3px 0px #0003;
+            }
+            .header__container {
+                display: flex;
+                justify-content: space-between;
+                position: relative;
+            }
+            .navbar {
+                display: flex;
+                align-items: center;
+            }
+            .navbar_desktop {
+                display: none;
+            }
+            .navbar_desktop__list_items {
+                list-style: none;
+            }
+            .navbar_desktop__item {
+                display: inline-block;
+                margin-right: 30px;
+            }
+            .logo__link,
+            .logo__link:hover,
+            .logo__link:active,
+            .logo__link:visited,
+            .navbar_desktop__item_link,
+            .navbar_desktop__item_link:hover,
+            .navbar_desktop__item_link:active,
+            .navbar_desktop__item_link:visited {
+                text-decoration: none;
+                color: inherit;
+            }
+            .navbar_desktop__languaje {
+                border-left: 1px solid #000;
+                border-right: 1px solid #000;
+                padding: 0 15px;
+                font-weight: 700;
+            }
+            .navbar_desktop__languaje_link {
+                display: inline-block;
+                margin-left: 15px;
+            }
+            .navbar_desktop__languaje_icon {
+                width: 30px;
+                vertical-align: middle;
+            }
+            .navbar_mobile {
+                margin: 0 10px;
+            }
+            .navbar_mobile__toggle_menu {
+                cursor: pointer;
+            }
+            button.header__register_btn {
+                position: absolute;
+                right: 10%;
+                top: calc(100% + 20px);
+                background-color: #E92027;
+                color: #fff;
+                border: none;
+                outline: none;
+                padding: 10px 30px;
+                border-radius: 0 0 10px 10px;
+                font-weight: 700;
+                cursor: pointer;
+            }
+            @media screen and (min-width: 992px) {
+                .navbar_desktop {
+                    display: flex;
+                }
+                .navbar_mobile {
+                    display: none;
+                }
+            }
+        </style>
+        <header class="header">
+            <div class="container header__container">
+                <div class="logo">
+                    <a href="#" class="logo__link">
+                        <img src="./assets/icons/REMAX-logo.svg" alt="Logo Remax" class="logo_image" width="150px" />
+                    </a>
+                </div>
+        
+                <nav class="navbar">
+                    <div class="navbar_desktop">
+                        <ul class="navbar_desktop__list_items">
+                            <li class="navbar_desktop__item"><a href="#" class="navbar_desktop__item_link">Comprar</a></li>
+                            <li class="navbar_desktop__item"><a href="#" class="navbar_desktop__item_link">Alquilar</a></li>
+                            <li class="navbar_desktop__item"><a href="#" class="navbar_desktop__item_link">Agencias / Agentes</a></li>
+                            <li class="navbar_desktop__item"><a href="#" class="navbar_desktop__item_link">Blog</a></li>
+                            <li class="navbar_desktop__item"><a href="#" class="navbar_desktop__item_link">Contáctanos</a></li>
+                        </ul>
+                        <div class="navbar_desktop__languaje">
+                            IDIOMA
+                            <a href="#" class="navbar_desktop__languaje_link">
+                                <img src="./assets/icons/dominican-republic-flag.jpg" alt="Bandera República Dominicana" class="navbar_desktop__languaje_icon">
+                            </a>
+                            <a href="#" class="navbar_desktop__languaje_link">
+                                <img src="./assets/icons/united-states-flag.jpg" alt="Bandera Estados Unidos" class="navbar_desktop__languaje_icon">
+                            </a>
+                        </div>
+                    </div>
+        
+                    <div class="navbar_mobile">
+                        <span class="navbar_mobile__toggle_menu">
+                            <img src="./assets/icons/menu.svg" alt="Boton de munú" class="navbar_mobile__button" width="30px" height="30px">
+                        </span>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- ************************** END HEADER ************************** -->
+
+
+        <!-- ************************** SEARCH ************************** -->
+            <style>
+                .search {
+                    padding: 55px 0 30px;
+                }
+                .title {
+                    font-size: 1.25rem;
+                    margin-bottom: 20px;
+                    text-align: center;
+                    font-family: 700;
+                }
+                .title_light {
+                    font-weight: 300;
+                }
+
+
+                .search_form {
+                    position: relative;
+                    max-width: 602px;
+                    margin: 0 auto;
+                }
+                .search_body {
+                    background-color: #fff;
+                    position: relative;
+                    z-index: 10;
+                    padding: 10px 50px 10px 20px;
+                    border-radius: 50px;
+                    display: flex;
+                }
+                .search_body__label {
+                    font-size: .8rem;
+                    font-weight: 700;
+                    cursor: pointer;
+                }
+                .search_body__label:nth-of-type(1) {
+                    width: 45%;
+                    border-right: 1px solid #1f3564;
+                    margin-right: 30px;
+                }
+                .search_body__label:nth-of-type(2) {
+                    width: 50%;
+                }
+                .input_text,
+                .input_text:focus {
+                    display: inline-block;
+                    border: none;
+                    outline: none;
+                    margin-top: 5px;
+                    font-size: 1rem;
+                    color: #344467;
+                }
+                .input_text::placeholder {
+                    color: #344467;
+                }
+                .input_text {
+                    border-right: 1px solid #1f3564;
+                    width: 50%;
+                    padding: 5px 20px 5px 0;
+                }
+
+                .input_select {
+                    appearance: none;
+                    background-image: url(./assets/icons/icon_input_arrow_down_remaxrd.svg);
+                    background-position: right 10px center;
+                    background-size: 15px;
+                    background-color: #fff;
+                    background-repeat: no-repeat;
+                    padding-right: 20px;
+                    padding-left: 40px;
+                    outline: none;
+                    border: none;
+                    width: 30%;
+                    margin: 5px auto 0;
+                    color: #344467;
+                    font-size: 1rem;
+                }
+                .button_submit {
+                    background-color: #1f3564;
+                    border: none;
+                    outline: none;
+                    padding: 14px 20px;
+                    border-radius: 15px;
+                    position: absolute;
+                    right: -10px;
+                    align-self: center;
+                    cursor: pointer;
+                }
+
+                .search_order {
+                    display: flex;
+                    align-items: center;
+                    padding: 0 5px;
+                    width: max-content;
+                    position: absolute;
+                    left: 110%;
+                    top: 30%;
+                }
+                .search__order_select,
+                .search__order_select:focus {
+                    background: none;
+                    border: none;
+                    outline: none;
+                    padding-left: 5px;
+                    font-size: .9rem;
+                    max-width: 150px;
+                }
+                .search__order_select{
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    -ms-appearance: none;
+                    -o-appearance: none;
+                    appearance: none;
+                }
+                .search__label_order {
+                    font-weight: 500;
+                }
+
+                @media screen and (max-width: 1299px) {
+                    .search_order {
+                        left: 50%;
+                        top: 140%;
+                        transform: translateX(-50%);
+                    }
+                    .search {
+                        padding-bottom: 80px;
+                    }
+                }
+                @media screen and (max-width: 767px) {
+                    .input_select {
+                        width: 35%;
+                    }
+                    .input_text {
+                        width: 58%;
+                    }
+                }
+                @media screen and (max-width: 575px) {
+                    .search {
+                        padding-bottom: 50px;
+                    }
+                    .search_body {
+                        flex-direction: column;
+                        justify-content: center;
+                        background: none;
+                        padding: 0;
+                    }
+                    .input_text,
+                    .input_text:focus {
+                        margin: 5px auto;
+                        padding: 15px 20px;
+                        border-radius: 50px;
+                        border-right: none;
+                        width: 100%;
+                        max-width: 360px;
+                    }
+                    .input_select {
+                        max-width: 161px;
+                        width: 100%;
+                        padding-top: 15px;
+                        padding-bottom: 15px;
+                        border-radius: 50px;
+                    }
+                    .button_submit {
+                        position: static;
+                        margin-top: 10px;
+                        width: 100%;
+                        max-width: 100px;
+                    }
+                    .search_order {
+                        position: static;
+                        transform: translateX(0);
+                        margin: 50px auto 0;
+                        text-align: center;
+                    }
+                }
+
+            </style>
+            <article class="agents">
+                <section class="search">
+                    <div class="container">
+                        <h1 class="title">AGENCIAS</h1>
+
+                        <form action="" method="get" class="search_form" id="cover_search">
+                            <div class="search_body">
+
+                                <input type="text" name="" placeholder="Nombre de agencia o agente" class="input_text" id="search_type">
+
+                                <select name="duracion" id="duracion" class="input_select">
+                                    <option value="" disabled selected>Buscar por</option>
+                                    <option value="">Agentes</option>
+                                    <option value="">Agencias</option>
+                                </select>   
+                                
+                                <button type="submit" class="button_submit" form="cover_search"><img src="./assets/icons/loupe_remax_rd.svg" alt="Loupe icon" class="button_submit__icon" width="15px" height="15px"/></button>
+
+                                <div class="search_order">
+                                    <label for="order" class="search__label_order">Ordenar por:</label>
+                                    <select name="order" class="search__order_select">
+                                        <option value="recientes" selected >Más recientes</option>
+                                        <option value="antiguos">Más antiguos</option>
+                                        <option value="precios_bajos">Precios más bajos</option>
+                                        <option value="precios_altos">Precios más altos</option>
+                                        <option value="exclusivos">Exclusivos</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+
+                <!-- RESULT COUNTER -->
+                <style>
+                    .results_counter {
+                        width: 100%;
+                        background-color: #fff;
+                        padding: 20px 0;
+                        margin-bottom: 2px;
+                    }
+                    .results_counter_text {
+                        text-align: center;
+                        font-size: .938rem;
+                        font-weight: 500;
+                        color: #969DAF;
+                        margin-bottom: 0;
+                    }
+                </style>
+                <section class="results_counter">
+                    <div class="container">
+                        <p class="results_counter_text">RESULTADOS DE LA BÚSQUEDA 200 AGENCIAS</p>
+                    </div>
+                </section>
+
+                <!-- REULTS -->
+                <style>
+                    .results {
+                        padding: 50px 0;
+                        background-color: #fff;
+                    }
+                    .results_title {
+                        font-size: 1.188rem;
+                        margin-bottom: 75px;
+                    }
+                    .results_title_light {
+                        font-weight: 300;
+                    }
+                    .results_container {
+                        display: grid;
+                        grid-template: auto / auto auto;
+                        gap: 30px 10px;
+
+                    }
+                    @media screen and (max-width: 991px) {
+                        .results_container {
+                            grid-template: auto / auto;
+                            gap: 30px 10px;
+
+                        }
+                    }
+
+                    /* AGENT CARD */
+                    .agency_card {
+                        max-width: 563px;
+                        width: 100%;
+                        border-radius: 20px;
+                        border: 1px solid #E4E4E4;
+                        overflow: hidden;
+                        place-self: center;
+                        display: flex;
+                        padding: 40px 15px 40px 35px;
+                        justify-content: space-between;
+                    }
+                    .agency_card__header {
+                        width: 43%;
+                    }
+                    .agency_card__details {
+                        width: 53%;
+                    }
+                    .agency_card__logo {
+                        width: 100%;
+                        text-align: center;
+                        margin-bottom: 50px;
+                    }
+                    .agency_card__logo_image {
+                        width: 80%;
+                    }
+                   
+                    .agency_card__btn {
+                        width: 100%;
+                        max-width: 194px;
+                        height: 35px;
+                        color: #fff;
+                        font-size: .688rem;
+                        font-weight: 700;
+                        margin: 5px auto;
+                        border-radius: 28px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    .agency_card__btn,
+                    .agency_card__btn:hover,
+                    .agency_card__btn:active,
+                    .agency_card__btn:visited {
+                        text-decoration: none;
+                    }
+                    .agency_card__btn_blue {
+                        background-color: #3D527F;
+                    }
+                    .agency_card__btn_blue_light {
+                        background-color: #969DAF;
+                    }
+                    .agency_card__btn_gray {
+                        background-color: #B0B1B3;
+                    }
+                    .agency_card__list {
+                        list-style: none;
+                    }
+                    .agency_card__list_item {
+                        margin-bottom: 20px;
+                    }
+                    .agency_card__detail_text {
+                        display: inline-block;
+                        width: 100%;
+                        font-size: 0.875rem;
+                        font-weight: 500;
+                        color: #676767;
+                    }
+
+                    @media screen and (max-width: 480px) {
+                        .agency_card__header,
+                        .agency_card__details {
+                            width: 100%;
+                        }
+                        .agency_card__header {
+                            margin-bottom: 50px;
+                        }
+                        .agency_card {
+                            flex-direction: column;
+                        }
+                        .agency_card__logo_image {
+                            width: 100%;
+                            max-width: 200px;
+                        }
+                    }
+
+                </style>
+                <section class="results">
+                    <div class="container">
+                        <h2 class="results_title">LISTADO DE <span class="results_title_light">AGENCIAS</span></h2>
+                        <div class="results_container">
+                            
+                            <div class="agency_card">
+                                <div class="agency_card__header">
+                                    <div class="agency_card__logo">
+                                        <img src="./assets/icons/remax_metropolitan.svg" alt="Logo Remax Metropolitana" class="agency_card__logo_image">
+                                    </div>
+                                    <div class="agency_card__button">
+                                        <a href="#" class="agency_card__btn agency_card__btn_gray">VER AGENTES</a>
+                                        <a href="#" class="agency_card__btn agency_card__btn_blue_light">CONTACTAR</a>
+                                        <a href="#" class="agency_card__btn agency_card__btn_blue">VER PROPIEDADES</a>
+                                    </div>
+                                </div>
+
+                                <div class="agency_card__details">
+                                    <ul class="agency_card__list">
+                                        <li class="agency_card__list_item">
+                                            <span class="agency_card__detail_text">Teléfono</span>
+                                            <span class="agency_card__detail_text">(809) 541-2020</span>
+                                        </li>
+    
+                                        <li class="agency_card__list_item">
+                                            <span class="agency_card__detail_text">Bróker(s)</span>
+                                            <span class="agency_card__detail_text">Mélido Marte, RE/MAX Regional</span>
+                                        </li>
+    
+                                        <li class="agency_card__list_item">
+                                            <span class="agency_card__detail_text">Teléfono</span>
+                                            <span class="agency_card__detail_text">(849) 214-7765</span>
+                                        </li>
+    
+                                        <li class="agency_card__list_item">
+                                            <span class="agency_card__detail_text">Correo</span>
+                                            <span class="agency_card__detail_text">infopropiedades@remaxm.net</span>
+                                        </li>
+    
+                                        <li class="agency_card__list_item">
+                                            <span class="agency_card__detail_text">Dirección</span>
+                                            <span class="agency_card__detail_text">Euclides Morillo 51A, Arroyo Hondo</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="agency_card">
+                                <div class="agency_card__header">
+                                    <div class="agency_card__logo">
+                                        <img src="./assets/icons/remax_metropolitan.svg" alt="Logo Remax Metropolitana" class="agency_card__logo_image">
+                                    </div>
+                                    <div class="agency_card__button">
+                                        <a href="#" class="agency_card__btn agency_card__btn_gray">VER AGENTES</a>
+                                        <a href="#" class="agency_card__btn agency_card__btn_blue_light">CONTACTAR</a>
+                                        <a href="#" class="agency_card__btn agency_card__btn_blue">VER PROPIEDADES</a>
+                                    </div>
+                                </div>
+
+                                <div class="agency_card__details">
+                                    <ul class="agency_card__list">
+                                        <li class="agency_card__list_item">
+                                            <span class="agency_card__detail_text">Teléfono</span>
+                                            <span class="agency_card__detail_text">(809) 541-2020</span>
+                                        </li>
+    
+                                        <li class="agency_card__list_item">
+                                            <span class="agency_card__detail_text">Bróker(s)</span>
+                                            <span class="agency_card__detail_text">Mélido Marte, RE/MAX Regional</span>
+                                        </li>
+    
+                                        <li class="agency_card__list_item">
+                                            <span class="agency_card__detail_text">Teléfono</span>
+                                            <span class="agency_card__detail_text">(849) 214-7765</span>
+                                        </li>
+    
+                                        <li class="agency_card__list_item">
+                                            <span class="agency_card__detail_text">Correo</span>
+                                            <span class="agency_card__detail_text">infopropiedades@remaxm.net</span>
+                                        </li>
+    
+                                        <li class="agency_card__list_item">
+                                            <span class="agency_card__detail_text">Dirección</span>
+                                            <span class="agency_card__detail_text">Euclides Morillo 51A, Arroyo Hondo</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="agency_card">
+                                <div class="agency_card__header">
+                                    <div class="agency_card__logo">
+                                        <img src="./assets/icons/remax_metropolitan.svg" alt="Logo Remax Metropolitana" class="agency_card__logo_image">
+                                    </div>
+                                    <div class="agency_card__button">
+                                        <a href="#" class="agency_card__btn agency_card__btn_gray">VER AGENTES</a>
+                                        <a href="#" class="agency_card__btn agency_card__btn_blue_light">CONTACTAR</a>
+                                        <a href="#" class="agency_card__btn agency_card__btn_blue">VER PROPIEDADES</a>
+                                    </div>
+                                </div>
+
+                                <div class="agency_card__details">
+                                    <ul class="agency_card__list">
+                                        <li class="agency_card__list_item">
+                                            <span class="agency_card__detail_text">Teléfono</span>
+                                            <span class="agency_card__detail_text">(809) 541-2020</span>
+                                        </li>
+    
+                                        <li class="agency_card__list_item">
+                                            <span class="agency_card__detail_text">Bróker(s)</span>
+                                            <span class="agency_card__detail_text">Mélido Marte, RE/MAX Regional</span>
+                                        </li>
+    
+                                        <li class="agency_card__list_item">
+                                            <span class="agency_card__detail_text">Teléfono</span>
+                                            <span class="agency_card__detail_text">(849) 214-7765</span>
+                                        </li>
+    
+                                        <li class="agency_card__list_item">
+                                            <span class="agency_card__detail_text">Correo</span>
+                                            <span class="agency_card__detail_text">infopropiedades@remaxm.net</span>
+                                        </li>
+    
+                                        <li class="agency_card__list_item">
+                                            <span class="agency_card__detail_text">Dirección</span>
+                                            <span class="agency_card__detail_text">Euclides Morillo 51A, Arroyo Hondo</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="agency_card">
+                                <div class="agency_card__header">
+                                    <div class="agency_card__logo">
+                                        <img src="./assets/icons/remax_metropolitan.svg" alt="Logo Remax Metropolitana" class="agency_card__logo_image">
+                                    </div>
+                                    <div class="agency_card__button">
+                                        <a href="#" class="agency_card__btn agency_card__btn_gray">VER AGENTES</a>
+                                        <a href="#" class="agency_card__btn agency_card__btn_blue_light">CONTACTAR</a>
+                                        <a href="#" class="agency_card__btn agency_card__btn_blue">VER PROPIEDADES</a>
+                                    </div>
+                                </div>
+
+                                <div class="agency_card__details">
+                                    <ul class="agency_card__list">
+                                        <li class="agency_card__list_item">
+                                            <span class="agency_card__detail_text">Teléfono</span>
+                                            <span class="agency_card__detail_text">(809) 541-2020</span>
+                                        </li>
+    
+                                        <li class="agency_card__list_item">
+                                            <span class="agency_card__detail_text">Bróker(s)</span>
+                                            <span class="agency_card__detail_text">Mélido Marte, RE/MAX Regional</span>
+                                        </li>
+    
+                                        <li class="agency_card__list_item">
+                                            <span class="agency_card__detail_text">Teléfono</span>
+                                            <span class="agency_card__detail_text">(849) 214-7765</span>
+                                        </li>
+    
+                                        <li class="agency_card__list_item">
+                                            <span class="agency_card__detail_text">Correo</span>
+                                            <span class="agency_card__detail_text">infopropiedades@remaxm.net</span>
+                                        </li>
+    
+                                        <li class="agency_card__list_item">
+                                            <span class="agency_card__detail_text">Dirección</span>
+                                            <span class="agency_card__detail_text">Euclides Morillo 51A, Arroyo Hondo</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="agency_card">
+                                <div class="agency_card__header">
+                                    <div class="agency_card__logo">
+                                        <img src="./assets/icons/remax_metropolitan.svg" alt="Logo Remax Metropolitana" class="agency_card__logo_image">
+                                    </div>
+                                    <div class="agency_card__button">
+                                        <a href="#" class="agency_card__btn agency_card__btn_gray">VER AGENTES</a>
+                                        <a href="#" class="agency_card__btn agency_card__btn_blue_light">CONTACTAR</a>
+                                        <a href="#" class="agency_card__btn agency_card__btn_blue">VER PROPIEDADES</a>
+                                    </div>
+                                </div>
+
+                                <div class="agency_card__details">
+                                    <ul class="agency_card__list">
+                                        <li class="agency_card__list_item">
+                                            <span class="agency_card__detail_text">Teléfono</span>
+                                            <span class="agency_card__detail_text">(809) 541-2020</span>
+                                        </li>
+    
+                                        <li class="agency_card__list_item">
+                                            <span class="agency_card__detail_text">Bróker(s)</span>
+                                            <span class="agency_card__detail_text">Mélido Marte, RE/MAX Regional</span>
+                                        </li>
+    
+                                        <li class="agency_card__list_item">
+                                            <span class="agency_card__detail_text">Teléfono</span>
+                                            <span class="agency_card__detail_text">(849) 214-7765</span>
+                                        </li>
+    
+                                        <li class="agency_card__list_item">
+                                            <span class="agency_card__detail_text">Correo</span>
+                                            <span class="agency_card__detail_text">infopropiedades@remaxm.net</span>
+                                        </li>
+    
+                                        <li class="agency_card__list_item">
+                                            <span class="agency_card__detail_text">Dirección</span>
+                                            <span class="agency_card__detail_text">Euclides Morillo 51A, Arroyo Hondo</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            
+
+                        </div>
+                    </div>
+                </section>
+            </article>
+        <!-- ************************** END SEARCH ************************** -->
+
+
+        <!-- ************************** FOOTER ************************** -->
+        <style>
+            .footer {
+                background-color: #fff;
+            }
+            .footer__container {
+                background-color: #1f3564;
+                border-radius: 0 200px 0 0;
+                padding: 50px 0;
+            }
+            .footer__row {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            .footer__col_right,
+            .footer__col_left {
+                width: 50%;
+                max-width: 550px;
+            }
+            .footer__col_left {
+                display: flex;
+            }
+            .footer__col_left_logo {
+                width: 20%;
+                display: flex;
+                align-items: center;
+            }
+            .footer__col_left_logo_image {
+                width: 100%;
+                max-width: 130px;
+            }
+            .footer__col_left_description {
+                width: 80%;
+                padding: 10px;
+            }
+            .footer__button:hover,
+            .footer__button:active,
+            .footer__button:visited,
+            .footer__button {
+                display: inline-block;
+                padding: 5px 20px;
+                color: #fff;
+                text-decoration: none;
+                border-radius: 50px;
+                margin-right: 10px;
+                font-weight: 700;
+            }
+            .footer__button__azul {
+                background-color: #0071ba;
+            }
+            .footer__button__azul_claro {
+                background-color: #29a9e0;
+            }
+            .footer__button__rojo {
+                background-color: #e92027;
+                margin-bottom: 20px;
+            }
+            .footer__text {
+                color: #fff;
+                margin: 20px 0;
+                font-size: .8rem;
+            }
+            .footer__social_link:hover,
+            .footer__social_link:active,
+            .footer__social_link:visited,
+            .footer__social_link {
+                display: inline-block;
+                border: 2px solid #fff;
+                border-radius: 50%;
+                padding: 8px;
+                text-align: center;
+            }
+            .footer__social_icon {
+                width: 20px;
+                height: 20px;
+                vertical-align: middle;
+            }
+            .footer__col_right {
+                padding: 10px 0 0 30px;
+            }
+            .footer__form {
+                margin-top: 80px;
+            }
+            .footer__input_mail {
+                background: none;
+                outline: none;
+                border: 1px solid #fff;
+                border-radius: 50px;
+                padding: 8px 20px;
+                color: #fff;
+                font-size: .9rem;
+                margin: 0 20px 10px 0;
+                max-width: 270px;
+                width: 100%;
+            }
+            .footer__input_submit {
+                background-color: #fff;
+                color: #1b2e57;
+                border: none;
+                outline: none;
+                padding: 9px 20px;
+                border-radius: 50px;
+                font-weight: 500;
+                cursor: pointer;
+            }
+            .footer__nav {
+                margin-top: 80px;
+            }
+            .footer__list {
+                text-align: center;
+            }
+            .footer__list_item {
+                display: inline-block;
+                margin: 0 5px;
+                padding: 5px 0;
+                margin-bottom: 5px;
+            }
+            .footer__list_item__link:hover,
+            .footer__list_item__link:active,
+            .footer__list_item__link:visited,
+            .footer__list_item__link {
+                color: #fff;
+                font-weight: 500;
+                text-decoration: none;
+                font-size: .9rem;
+            }
+            .footer__right {
+                text-align: center;
+                padding: 30px 0;
+            }
+            .footer__logo {
+                margin-bottom: 10px;
+            }
+            @media screen and (max-width: 1300px) {
+                .footer__button:hover, 
+                .footer__button:active, 
+                .footer__button:visited, 
+                .footer__button {
+                    padding: 5px 17px;
+                    margin-right: 5px;
+                    margin-bottom: 10px;
+                }
+            }
+            @media screen and (max-width: 767px) {
+                .footer__container {
+                    border-radius: 0;
+                }
+                .footer__col_right, 
+                .footer__col_left {
+                    width: 100%;
+                    margin-bottom: 30px;
+                }
+                .footer__col_left_description .footer__text.mt-80 {
+                    margin-top: 30px !important;
+                }
+                .footer__col_left {
+                    flex-wrap: wrap;
+                }
+                .footer__col_left_logo {
+                    text-align: center;
+                    margin-bottom: 30px;
+                }
+                .footer__col_left_logo_image {
+                    margin: 0 auto;
+                }
+                .footer__col_left_logo,
+                .footer__col_left_description {
+                    width: 100%;
+                }
+                .footer__col_right {
+                    margin-top: 50px;
+                    padding-left: 0;
+                }
+                .footer__col_right,
+                .footer__col_left_description {
+                    text-align: center;
+                }
+                .footer__button.footer__button__azul,
+                .footer__button.footer__button__rojo {
+                    display: inline-block;
+                    margin: 0 auto 10px;
+                }
+                .footer__form {
+                    margin-top: 10px;
+                }
+            }
+        </style>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="container">
+                    <section class="footer__row">
+                        <div class="footer__col_left">
+                            <div class="footer__col_left_logo">
+                                <img src="./assets/icons/remax-balloon.png" alt="Logo Remax" class="footer__col_left_logo_image">
+                            </div>
+                            <div class="footer__col_left_description">
+                                <a href="#" class="footer__button footer__button__azul">Abre tu Franquicia</a>
+                                <a href="#" class="footer__button footer__button__azul_claro">Unete a RE/MAX</a>
+                                <p class="footer__text mt-80">RE/MAX es una empresa multinacional, que permite Capacitar, Educar y relacionar a los Asesores y gestores de negocios con el mercado inmobiliario del Mundo, a través de su conocimiento y relaciones nacionales y extranjeras. Desde la primer oficina que abrió sus puertas en 1973 en Denver, Colorado, RE/MAX se ha convertido en una red global de bienes raíces de oficinas de propiedad de franquiciados que funciona con cerca de 90.000 asociados de ventas.</p>
+                                <a href="https://www.facebook.com/remaxrd" target="_blank" class="footer__social_link"><img src="./assets/icons/facebook.png" alt="Facebook" class="footer__social_icon"></a>
+                                <a href="#" target="_blank" class="footer__social_link"><img src="./assets/icons/whatsapp.png" alt="Whatsapp" class="footer__social_icon"></a>
+                                <a href="https://twitter.com/Remax_RD" target="_blank" width="20px" height="20px" class="footer__social_link"><img src="./assets/icons/twitter.png" alt="Twitter" class="footer__social_icon"></a>
+                                <a href="https://instagram.com/remax_rd?igshid=YmMyMTA2M2Y=" target="_blank" class="footer__social_link"><img src="./assets/icons/instagram-symbol.png" alt="Instagram" class="footer__social_icon"></a>
+                            </div>
+                        </div>
+
+                        <div class="footer__col_right">
+                            <a href="#" class="footer__button footer__button__rojo">REGISTRATE</a>
+                            <p class="footer__text">Mejora tu experiencia de búsqueda. Regístrate para que puedas guardar las propiedades de tu interés y recibir actualizaciones de las mismas.</p>
+
+                            <form action="" class="footer__form" method="post">
+                                <p class="footer__text">Suscribete y recibe las actualizaciones de nuevas propieades</p>
+                                <input type="email" name="email" id="" class="footer__input_mail" placeholder="Email"/>
+                                <input type="submit" class="footer__input_submit" value="SUSCRIBIR">
+                            </form>
+                        </div>
+                    </section>
+
+                    <nav class="footer__nav">
+                        <ul class="footer__list">
+                            <li class="footer__list_item"><a href="#" class="footer__list_item__link">Propiedades</a></li>
+                            <li class="footer__list_item"><a href="#" class="footer__list_item__link">Agentes</a></li>
+                            <li class="footer__list_item"><a href="#" class="footer__list_item__link">Franquicias</a></li>
+                            <li class="footer__list_item"><a href="#" class="footer__list_item__link">Servicios</a></li>
+                            <li class="footer__list_item"><a href="#" class="footer__list_item__link">Blog</a></li>
+                            <li class="footer__list_item"><a href="#" class="footer__list_item__link">Alquilar</a></li>
+                            <li class="footer__list_item"><a href="#" class="footer__list_item__link">Collection</a></li>
+                            <li class="footer__list_item"><a href="#" class="footer__list_item__link">Contáctanos</a></li>
+                            <li class="footer__list_item"><a href="#" class="footer__list_item__link">Comprar</a></li>
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
+            <div class="container">
+                <section class="footer__right">
+                    <img src="./assets/icons/REMAX-logo.svg" alt="Logo Remax" class="footer__logo" width="200px">
+                    <p class="footer__right_texy">Copyright © Todos los derechos reservados 2022, REMAX RD</p>
+                </section>
+            </div>
+        </footer>
+        <!-- ************************** END FOOTER ************************** -->
+    </body>
+</html>
