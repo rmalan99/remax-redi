@@ -150,18 +150,21 @@
                 width: 100%;
                 height: 100%;
             }
-            .cover__details {
-                width: 501px;
-                background-color: #1F3564;
-                height: 70%;
+            .cover__content {
                 position: absolute;
-                bottom: 0;
                 left: 105px;
-                padding: 39px;
+                bottom: 0;
+                width: 501px;
+            }
+            .cover__details {
+                background-color: #1F3564;
+                height: 580px;
+                padding: 70px 39px 39px;
+                
             }
             .cover__title {
                 color: #fff;
-                font-size: 2.125rem;
+                font-size: 1.938rem;
                 font-weight: 700;
                 margin-bottom: 30px;
             }
@@ -173,38 +176,22 @@
                 color: #fff;
                 font-size: .938rem;
                 font-weight: 400;
-                line-height: 31px;
-                margin-bottom: 50px;
+                margin-bottom: 20px;
+                line-height: 18px;
             }
-            .cover__buttons {
+            .cover__logos {
+                background-color: #fff;
+                border-radius: 100px;
                 width: 100%;
-                text-align: center;
-            }
-            .cover__btn {
-                color: #fff;
-                font-size: .938rem;
-                font-weight: 700;
+                height: 86px;
+                max-width: 448px;
+                margin: 0 auto 100px;
+                padding: 0 50px;
                 display: flex;
-                justify-content: center;
+                justify-content: space-around;
                 align-items: center;
-                width: 100%;
-                max-width: 241px;
-                height: 40px;
-                margin: 0 auto 20px;
-                border-radius: 50px;
             }
-            .cover__btn,
-            .cover__btn:hover,
-            .cover__btn:active,
-            .cover__btn:visited {
-                text-decoration: none;
-            }
-            .cover__btn_blue {
-                background-color: #29A9E0;
-            }
-            .cover__btn_red {
-                background-color: #E92027;
-            }
+            
             @media screen and (max-width: 991px) {
                 .cover {
                     height: auto;
@@ -213,16 +200,24 @@
                     height: 60vw;
                     background-position: top center;
                 }
-                .cover__details {
+                .cover__content {
                     position: static;
                     width: 100%;
-                    padding-bottom: 250px;
                 }
                 .cover__title,
                 .cover__text {
                     max-width: 720px;
                     margin-left: auto;
                     margin-right: auto;
+                }
+                .cover__logos {
+                    max-width: none;
+                    border-radius: 0;
+                    margin-bottom: 0;
+                    justify-content: center;
+                }
+                .cover__logos_images {
+                    margin: 0 12px;
                 }
             }
             @media screen and (max-width: 767px) {
@@ -231,15 +226,28 @@
                     max-width: 540px;
                 }
             }
+            @media screen and (max-width: 570px) {
+                .cover {
+                    margin-bottom: 0;
+                }
+                .cover__details {
+                    height: auto;
+                }
+            }
         </style>
         <article class="cover">
             <section class="cover__background" style="background-image: url('./assets/images/bussiness-people-working-in-team-in-an-office.jpg');"></section>
-            <section class="cover__details">
-                <h1 class="cover__title">Préstamos <span class="cover__title_light">Hipotecarios</span></h1>
-                <p class="cover__text">Te ayudamos a adquirir tu préstamo hipotecario no importa si resides o no en el país. Solo debes completar los datos e indicar en los comentarios si tienes alguna institución financiera de preferencia y serás contactado dentro de las próximas 48 horas.</p>
-                <div class="cover__buttons">
-                    <a href="#" class="cover__btn cover__btn_blue">Calculadora Préstamo</a>
-                    <a href="#" class="cover__btn cover__btn_red">Solicitar Préstamo</a>
+            <section class="cover__content">
+                <div class="cover__logos">
+                    <img src="./assets/icons/banco_popular_logo.svg" alt="Logo Banco Popular" class="cover__logos_images">
+                    <img src="./assets/icons/banco_reservas_logo.svg" alt="Logo Banco Reservas" class="cover__logos_images">
+                    <img src="./assets/icons/banco_bhd_logo.svg" alt="Logo Banco BHD" class="cover__logos_images">
+                    <img src="./assets/icons/scotiabank_logo.svg" alt="Logo ScotiaBank" class="cover__logos_images">
+                </div>
+                <div class="cover__details">
+                    <h1 class="cover__title">Formulario de préstamos</h1>
+                    <p class="cover__text">Ingrese el monto total de su préstamo hipotecario para estimar su pago mensual por el número de años que solicita.</p>
+                    <p class="cover__text">Cada institución financiera tiene su propia calculadora. Esta herramienta es una ayuda para calcular de manera aproximada la cuota hipotecaria del préstamo a tomar, por lo tanto no compromete a RE/MAX ni a sus aliados hipotecarios. El precio que aparece sugerido es el promedio de las últimas transacciones registradas en su sector. Puedes cambiar este precio.</p>
                 </div>
             </section>
         </article>
@@ -305,33 +313,139 @@
                 }
             }
         </style>
-        <article class="details">
-            <div class="container details__container">
-                <section class="details__description">
-                    <p class="details__text">¡Tenemos alianza con las <span class="details__text_strong">Instituciones financieras</span> más importantes del país!</p>
-                </section>
 
-                <section class="details__logos">
-                    <img src="./assets/icons/banco_ademi_logo.png" alt="Logo Banco Ademi" class="details__logos_image">
-                    <img src="./assets/icons/la_nacional_logo.png" alt="Logo Asociacion la Nacional" class="details__logos_image">
-                    <img src="./assets/icons/asociacion_popular_logo.png" alt="Logo Asociacion Popular" class="details__logos_image">
-                    <img src="./assets/icons/banco_caribe_logo.png" alt="Logo Banco Caribe" class="details__logos_image">
-                    <img src="./assets/icons/banco_union_logo.png" alt="Logo Banco Unión" class="details__logos_image">
-                    <img src="./assets/icons/banco_bdi_logo.png" alt="Logo Banco BDI" class="details__logos_image">
-                    <img src="./assets/icons/banco_bhd_leon_logo.png" alt="Logo Banco BHD León" class="details__logos_image">
-                    <img src="./assets/icons/banco_lopez_de_haro_logo.png" alt="Logo Banco Lopez De Haro" class="details__logos_image">
-                    <img src="./assets/icons/scotiabank_logo.png" alt="Logo ScotiaBank" class="details__logos_image">
-                    <img src="./assets/icons/banco_popular_logo.png" alt="Logo Banco Popular" class="details__logos_image">
-                    <img src="./assets/icons/banco_promerica_logo.png" alt="Logo Banco Promerica" class="details__logos_image">
-                    <img src="./assets/icons/vivienda_universales_rd_logo.png" alt="Logo Viviendas Universales RD" class="details__logos_image">
-                    <img src="./assets/icons/asociacion_cibao_logo.png" alt="Logo Asociacion Cibao" class="details__logos_image">
-                    <img src="./assets/icons/banesco_contigo_logo.png" alt="Logo Banesco Contigo" class="details__logos_image">
-                </section>
-            </div>
-        </article>
 
         <!-- ************************** END DETAILS ************************** -->
         
+        <!-- ************************** CALCULADORA DE PRESTAMOS ************************** -->
+        <style>
+            .loan_form {
+                border-radius: 200px 0px 0px 0px;
+                position: relative;
+                z-index: 10;
+                background-color: #F3F3F5;
+                padding: 120px 0 200px;
+            }
+            .loan_form__title {
+                font-size: 1.45rem;
+            }
+            .loan_form__title_light {
+                font-weight: 300;
+            }
+            .loan_form__form {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                width: 100%;
+                max-width: 913px;
+                margin: 100px auto 0;
+            }
+            .loan_form__input,
+            .loan_form__input:focus {
+                width: 48%;
+                appearance: none;
+                border: none;
+                outline: none;
+                background-color: #fff;
+                border-radius: 50px;
+                font-size: 1.188rem;
+                font-weight: 400;
+                color: #1F3564;
+                margin-bottom: 20px;
+                padding: 17px 25px;
+            }
+            .loan_form__textarea::placeholder,
+            .loan_form__input::placeholder {
+                font-size: 1.188rem;
+                font-weight: 400;
+                color: #1F3564;
+            }
+            .loan_form__textarea {
+                appearance: none;
+                border: none;
+                outline: none;
+                background-color: #FFFFFF;
+                border-radius: 35px;
+                padding: 17px 25px;
+                resize: none;
+                min-width: 100%;
+                max-width: 100%;
+                height: 600vw;
+                max-height: 450px;
+            }
+            .loan_form__buttons {
+                width: 100%;
+                margin-top: 90px;
+                text-align: center;
+            }
+            .loan_form__btn {
+                display: inline-block;
+                padding: 12px 42px;
+                color: #fff;
+                font-size: 0.938rem;
+                font-weight: 700;
+                border-radius: 50px;
+                margin: 0 10px 20px;
+                cursor: pointer;
+            }
+            .loan_form__btn_submit {
+                appearance: none;
+                border: none;
+                outline: none;
+                background-color: #E92027;
+            }
+            .loan_form__btn_link,
+            .loan_form__btn_link:hover,
+            .loan_form__btn_link:active,
+            .loan_form__btn_link:visited {
+                text-decoration: none;
+            }
+            .loan_form__btn_link {
+                background-color: #2AAAE0;
+            }
+           
+            @media screen and (max-width: 991px) {
+                .loan_form {
+                    border-radius: 150px 0px 0px 0px;
+                }
+            }
+            @media screen and (max-width: 767px) {
+                .loan_form__input,
+                .loan_form__input:focus {
+                    width: 100%;
+                }
+            }
+            @media screen and (max-width: 570px) {
+                .loan_form {
+                    border-radius: 0px;
+                }
+            }
+            
+        </style>
+        <article class="loan_form">
+            <div class="container">
+                <h2 class="loan_form__title">FORMULARIO DE <span class="loan_form__title_light">PRÉSTAMOS</span></h2>
+                <form action="" class="loan_form__form">
+                    <input type="text" name="name" id="" placeholder="Nombre Completo" class="loan_form__input">
+                    <input type="text" name="cedula" id="" placeholder="Cedula o pasaporte" class="loan_form__input">
+                    <input type="tel" name="telefono" id="" placeholder="Teléfono" class="loan_form__input">
+                    <input type="text" name="date" id="" onfocus="(this.type='date')" placeholder="Fecha de nacimiento" class="loan_form__input">
+                    <input type="email" name="email" id="" placeholder="Email" class="loan_form__input">
+                    <input type="number" name="ingresos" id="" placeholder="Ingresos apróximados" class="loan_form__input">
+                    <input type="number" name="edad" id="" placeholder="Edad" class="loan_form__input">
+                    <input type="number" name="deudores" id="" placeholder="Cantidad de deudores" class="loan_form__input">
+                    <textarea name="comentario" id="" placeholder="Comentario" class="loan_form__textarea"></textarea>
+
+                    <div class="loan_form__buttons">
+                        <a href="#" class="loan_form__btn loan_form__btn_link">REGRESAR</a>
+                        <input type="submit" class="loan_form__btn loan_form__btn_submit" value="ENVIAR">
+                    </div>
+                </form>
+            </div>
+        </article>
+        <!-- ************************** FIN CALCULADORA DE PRESTAMOS ************************** -->
+
+
 
         <!-- ************************** FOOTER ************************** -->
         <style>
