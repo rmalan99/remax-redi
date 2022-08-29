@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>REMAX RD</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/styles/main.css">
+        <link rel="stylesheet" href="./assets/styles/proyecttos_exclusivos.css">
+    </head>
+    <body>
+        <!-- ************************** HEADER ************************** -->
+        <style>
+            .header {
+                width: 100%;
+                background-color: #fff;
+                padding: 20px 0;
+                position: sticky;
+                top: 0;
+                z-index: 1000;
+                box-shadow: 1px 0px 3px 0px #0003;
+            }
+            .header__container {
+                display: flex;
+                justify-content: space-between;
+                position: relative;
+            }
+            .navbar {
+                display: flex;
+                align-items: center;
+            }
+            .navbar_desktop {
+                display: none;
+            }
+            .navbar_desktop__list_items {
+                list-style: none;
+            }
+            .navbar_desktop__item {
+                display: inline-block;
+                margin-right: 30px;
+                font-weight: 700;
+            }
+            .logo__link,
+            .logo__link:hover,
+            .logo__link:active,
+            .logo__link:visited,
+            .navbar_desktop__item_link,
+            .navbar_desktop__item_link:hover,
+            .navbar_desktop__item_link:active,
+            .navbar_desktop__item_link:visited {
+                text-decoration: none;
+                color: inherit;
+            }
+            .navbar_desktop__languaje {
+                border-left: 1px solid #000;
+                border-right: 1px solid #000;
+                padding: 0 15px;
+                font-weight: 700;
+            }
+            .navbar_desktop__languaje_link {
+                display: inline-block;
+                margin-left: 15px;
+            }
+            .navbar_desktop__languaje_icon {
+                width: 30px;
+                vertical-align: middle;
+            }
+            .navbar_mobile {
+                margin: 0 10px;
+            }
+            .navbar_mobile__toggle_menu {
+                cursor: pointer;
+            }
+            button.header__register_btn {
+                position: absolute;
+                right: 10%;
+                top: calc(100% + 20px);
+                background-color: #E92027;
+                color: #fff;
+                border: none;
+                outline: none;
+                padding: 10px 30px;
+                border-radius: 0 0 10px 10px;
+                font-weight: 700;
+                cursor: pointer;
+            }
+            @media screen and (min-width: 992px) {
+                .navbar_desktop {
+                    display: flex;
+                }
+                .navbar_mobile {
+                    display: none;
+                }
+            }
+        </style>
+        <header class="header">
+            <div class="container header__container">
+                <div class="logo">
+                    <a href="#" class="logo__link">
+                        <img src="./assets/icons/REMAX-logo.svg" alt="Logo Remax" class="logo_image" width="150px" />
+                    </a>
+                </div>
+        
+                <nav class="navbar">
+                    <div class="navbar_desktop">
+                        <ul class="navbar_desktop__list_items">
+                            <li class="navbar_desktop__item"><a href="#" class="navbar_desktop__item_link">Comprar</a></li>
+                            <li class="navbar_desktop__item"><a href="#" class="navbar_desktop__item_link">Alquilar</a></li>
+                            <li class="navbar_desktop__item"><a href="#" class="navbar_desktop__item_link">Agencias / Agentes</a></li>
+                            <li class="navbar_desktop__item"><a href="#" class="navbar_desktop__item_link">Blog</a></li>
+                            <li class="navbar_desktop__item"><a href="#" class="navbar_desktop__item_link">Contáctanos</a></li>
+                        </ul>
+                        <div class="navbar_desktop__languaje">
+                            IDIOMA
+                            <a href="#" class="navbar_desktop__languaje_link">
+                                <img src="./assets/icons/dominican-republic-flag.jpg" alt="Bandera República Dominicana" class="navbar_desktop__languaje_icon">
+                            </a>
+                            <a href="#" class="navbar_desktop__languaje_link">
+                                <img src="./assets/icons/united-states-flag.jpg" alt="Bandera Estados Unidos" class="navbar_desktop__languaje_icon">
+                            </a>
+                        </div>
+                    </div>
+        
+                    <div class="navbar_mobile">
+                        <span class="navbar_mobile__toggle_menu">
+                            <img src="./assets/icons/menu.svg" alt="Boton de munú" class="navbar_mobile__button" width="30px" height="30px">
+                        </span>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- ************************** END HEADER ************************** -->
+
+        <!-- ************************** COVER ************************** -->
+
+        <style>
+            .cover {
+                width: 100%;
+                height: 976px;
+                position: relative;
+                margin-bottom: -200px;
+            }
+            .cover__background {
+                background-position: top center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 100%;
+                height: 100%;
+            }
+            .cover__content {
+                position: absolute;
+                left: 105px;
+                bottom: 0;
+                width: 501px;
+            }
+            .cover__details {
+                background-color: #1F3564;
+                height: 580px;
+                padding: 70px 39px 39px;
+                
+            }
+            .cover__title {
+                color: #fff;
+                font-size: 2.125rem;
+                font-weight: 700;
+                margin-bottom: 30px;
+            }
+            .cover__title_light {
+                color: #fff;
+                font-weight: 300;
+            }
+            .cover__text {
+                color: #fff;
+                font-size: .938rem;
+                font-weight: 400;
+                margin-bottom: 20px;
+                line-height: 18px;
+            }
+            .cover__logos {
+                background-color: #fff;
+                border-radius: 100px;
+                width: 100%;
+                height: 86px;
+                max-width: 448px;
+                margin: 0 auto 100px;
+                padding: 0 50px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+            
+            @media screen and (max-width: 991px) {
+                .cover {
+                    height: auto;
+                }
+                .cover__background {
+                    height: 60vw;
+                    background-position: top center;
+                }
+                .cover__content {
+                    position: static;
+                    width: 100%;
+                }
+                .cover__title,
+                .cover__text {
+                    max-width: 720px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                .cover__logos {
+                    max-width: none;
+                    border-radius: 0;
+                    margin-bottom: 0;
+                    justify-content: center;
+                }
+                .cover__logos_images {
+                    margin: 0 12px;
+                }
+            }
+            @media screen and (max-width: 767px) {
+                .cover__title,
+                .cover__text {
+                    max-width: 540px;
+                }
+            }
+            @media screen and (max-width: 570px) {
+                .cover {
+                    margin-bottom: 0;
+                }
+                .cover__details {
+                    height: auto;
+                }
+            }
+        </style>
+        <article class="cover">
+            <section class="cover__background" style="background-image: url('./assets/images/calculadora_de_prestamos_background.jpg');"></section>
+            <section class="cover__content">
+                <div class="cover__logos">
+                    <img src="./assets/icons/banco_popular_logo.svg" alt="Logo Banco Popular" class="cover__logos_images">
+                    <img src="./assets/icons/banco_reservas_logo.svg" alt="Logo Banco Reservas" class="cover__logos_images">
+                    <img src="./assets/icons/banco_bhd_logo.svg" alt="Logo Banco BHD" class="cover__logos_images">
+                    <img src="./assets/icons/scotiabank_logo.svg" alt="Logo ScotiaBank" class="cover__logos_images">
+                </div>
+                <div class="cover__details">
+                    <h1 class="cover__title">Préstamos <span class="cover__title_light">Hipotecarios</span></h1>
+                    <p class="cover__text">Ingrese el monto total de su préstamo hipotecario para estimar su pago mensual por el número de años que solicita.</p>
+                    <p class="cover__text">Cada institución financiera tiene su propia calculadora. Esta herramienta es una ayuda para calcular de manera aproximada la cuota hipotecaria del préstamo a tomar, por lo tanto no compromete a RE/MAX ni a sus aliados hipotecarios. El precio que aparece sugerido es el promedio de las últimas transacciones registradas en su sector. Puedes cambiar este precio.</p>
+                </div>
+            </section>
+        </article>
+
+        <!-- ************************** END COVER ************************** -->
+
+
+        <!-- ************************** DETAILS ************************** -->
+        <style>
+            .details {
+                padding: 130px 0;
+                border-radius: 200px 0px 0px 0px;
+                position: relative;
+                z-index: 10;
+                background-color: #F3F3F5;
+            }
+            .details__container {
+                display: flex;
+            }
+            .details__logos {
+                width: 50%;
+            }
+            .details__description {
+                width: 40%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .details__logos {
+                text-align: center;
+            }
+            .details__logos_image {
+                margin: 0 10px 10px;
+            }
+            .details__text {
+                font-size: 1.403rem;
+                font-size: 400;
+                max-width: 290px;
+                margin: 0 auto;
+                text-align: center;
+            }
+            .details__text_strong {
+                font-weight: 700;
+            }
+            @media screen and (max-width: 991px) {
+                .details {
+                    border-radius: 150px 0px 0px 0px;
+                }
+                .details__container {
+                    flex-direction: column;
+                }
+                .details__description,
+                .details__logos {
+                    width: 100%;
+                }
+                .details__description {
+                    margin-bottom: 50px;
+                }
+            }
+            @media screen and (max-width: 570px) {
+                .details {
+                    border-radius: 0px;
+                }
+            }
+        </style>
+
+
+        <!-- ************************** END DETAILS ************************** -->
+        
+        <!-- ************************** CALCULADORA DE PRESTAMOS ************************** -->
+        <style>
+            .calculator {
+                padding: 130px 0;
+                border-radius: 200px 0px 0px 0px;
+                position: relative;
+                z-index: 10;
+                background-color: #F3F3F5;
+                padding: 100px 0 130px;
+            }
+            .calculator__title {
+                font-size: 1.45rem;
+            }
+            .calculator__title_light {
+                font-weight: 300;
+            }
+            .calculator__form {
+                margin: 100px auto 0;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                max-width: 800px;
+            }
+            .calculator__tasa,
+            .calculator__duracion,
+            .calculator__inicial,
+            .calculator__monto {
+                width: 45%;
+                margin-bottom: 20px;
+            }
+            .calculator__label,
+            .calculator__input {
+                font-weight: 700;
+                font-size: 1rem;
+            }
+            .calculator__label {
+                padding-left: 10px;
+            }
+            .calculator__input {
+                width: 100%;
+                margin-top: 5px;
+                outline: none;
+                border: 1px solid #D0D0D0;
+                border-radius: 50px;
+                padding: 15px;
+                background: none;
+            }
+            .calculator__input_select {
+                appearance: none;
+                background-image: url(./assets/icons/icon_input_arrow_down_remaxrd.svg);
+                background-position: right 20px center;
+                background-size: 15px;
+                background-repeat: no-repeat;
+                padding-right: 40px;
+            }
+            .calculator__range {
+                width: 100%;
+                margin: 30px 0 40px;
+            }
+            .calculator__input_range {
+                appearance: none;
+                -webkit-appearance: none;
+                width: 100%;
+                background-color: #9E9FA3;
+                height: 10px;
+                border-radius: 50px;
+            }
+            .calculator__input_range::-moz-range-track {
+                appearance: none;
+                -webkit-appearance: none;
+                background: none;
+                height: 10px;
+                border-radius: 50px;
+                width: 50%;
+            }
+            .calculator__input_range::-webkit-slider-runnable-track {
+                appearance: none;
+                -webkit-appearance: none;
+                background: none;
+                height: 10px;
+                border-radius: 50px;
+                width: 50%;
+            }
+            .calculator__input_range::-moz-range-thumb { 
+                appearance: none;
+                -webkit-appearance: none;
+                background-color: #E92027;
+                color: #E92027;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                outline: 3px solid #fff;
+                cursor: pointer;
+                margin-top: -10px;
+            }
+            .calculator__input_range::-webkit-slider-thumb { 
+                appearance: none;
+                -webkit-appearance: none;
+                background-color: #E92027;
+                color: #E92027;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                outline: 3px solid #fff;
+                cursor: pointer;
+                margin-top: -10px;
+            }
+            .calculator__input_range::-moz-range-progress {
+                background: #E92027;
+                height: 100%;
+                border-radius: 50px;
+            }
+            .calculator__footer {
+                width: 100%;
+                margin-bottom: 50px;
+            }
+            .calculator__submit,
+            .calculator__footer,
+            .calculator__result {
+                display: flex;
+                align-items: center;
+                font-weight: 700;
+                color: #fff;
+            }
+            .calculator__result {
+                font-size: 1.1rem;
+                width: 75%;
+                background-color: #969DAF;
+                height: 80px;
+                justify-content: center;
+                border-radius: 50px;
+                position: relative;
+                z-index: 10;
+            }
+            .calculator__result_amount {
+                font-size: 2.9rem;
+                font-weight: 700;
+                color: #fff;
+                margin-left: 30px;
+            }
+            .calculator__submit {
+                background-color: #1F3564;
+                font-size: 1.1rem;
+                font-weight: 700;
+                width: 30%;
+                height: 60px;
+                border-radius: 50px;
+                justify-content: center;
+                margin-left: -6%;
+                border: none;
+                outline: none;
+                cursor: pointer;
+            }
+            .calculator__details {
+                text-align: center;
+                color: #8C8C8C;
+            }
+            .calculator__text {
+                font-size: .7rem;
+                color: #8C8C8C;
+                font-weight: 400;
+                margin-bottom: 50px;
+
+            }
+            .calculator__text:nth-of-type(1) {
+                font-size: .8rem;
+                font-weight: 500;
+            }
+            @media screen and (max-width: 991px) {
+                .calculator {
+                    border-radius: 150px 0px 0px 0px;
+                }
+            }
+            @media screen and (max-width: 767px) {
+                .calculator__tasa, 
+                .calculator__duracion, 
+                .calculator__inicial, 
+                .calculator__monto {
+                    width: 100%;
+                }
+                .calculator__footer {
+                    flex-direction: column;
+                }
+                .calculator__result{
+                    width: 100%;
+                    flex-direction: column;
+                }
+                .calculator__submit {
+                    width: 200px;
+                    margin-top: 20px;
+                }
+                .calculator__result {
+                    font-size: 1rem;
+                    padding: 20px 0 10px;
+                    height: auto;
+                }
+                .calculator__result_amount {
+                    font-size: 1.9rem;
+                    margin-left: 0;
+                    margin-top: 5px;
+                }
+            }
+            @media screen and (max-width: 570px) {
+                .calculator {
+                    border-radius: 0px;
+                }
+            }
+            
+        </style>
+        <article class="calculator">
+            <div class="container">
+                <h2 class="calculator__title">CALCULADORA DE <span class="calculator__title_light">PRÉSTAMOS</span></h2>
+                <form action="" class="calculator__form">
+                    <div class="calculator__tasa">
+                        <label for="tasa" class="calculator__label">Tasa del Banco </label>
+                        <select name="tasa" id="tasa" class="calculator__input calculator__input_select">
+                            <option value="" selected>Popular 7.5%</option>
+                            <option value="">Popular 7.5%</option>
+                            <option value="">Popular 7.5%</option>
+                        </select>
+                    </div>
+    
+                    <div class="calculator__duracion">
+                        <label for="duracion" class="calculator__label">Duración del préstamo</label>
+                        <select name="duracion" id="duracion" class="calculator__input calculator__input_select">
+                            <option value="" selected>25 Años</option>
+                            <option value="">25 Años</option>
+                            <option value="">25 Años</option>
+                        </select>    
+                    </div>
+    
+                    <div class="calculator__inicial">
+                        <label for="inicial" class="calculator__label">Pago inicial</label>
+                        <input type="text" name="inicial" id="" class="calculator__input calculator__input_text">
+                    </div>
+    
+                    <div class="calculator__monto">
+                        <label for="monto" class="calculator__label">Monto del préstamo</label>
+                        <input type="text" name="monto" id="" class="calculator__input calculator__input_text">
+                    </div>
+    
+                    <div class="calculator__range">
+                        <input type="range" name="" id="" class="calculator__input_range">
+                    </div>
+    
+                    <div class="calculator__footer">
+                        <div class="calculator__result">
+                            Pago mensual estimado <span class="calculator__result_amount">US$548</span>
+                        </div>
+                        <button class="calculator__submit">Solicitar</button>
+                    </div>
+
+                    <div class="calculator__details">
+                        <p class="calculator__text">Calcula la cuota de tu próximo hogar y solicita tu préstamo sin moverte de casa.</p>
+                        <p class="calculator__text">Cada institución financiera tiene su propia calculadora. Esta herramienta es una ayuda para calcular de manera aproximada la cuota hipotecaria del préstamo a tomar, por lo tanto, no compromete a RE/MAX ni a sus aliados hipotecarios.</p>
+                    </div>
+                </form>
+            </div>
+        </article>
+        <!-- ************************** FIN CALCULADORA DE PRESTAMOS ************************** -->
+
+
+
+        <!-- ************************** FOOTER ************************** -->
+        <style>
+            .footer {
+                background-color: #fff;
+            }
+            .footer__container {
+                background-color: #1f3564;
+                border-radius: 0 200px 0 0;
+                padding: 50px 0;
+            }
+            .footer__row {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            .footer__col_right,
+            .footer__col_left {
+                width: 50%;
+                max-width: 550px;
+            }
+            .footer__col_left {
+                display: flex;
+            }
+            .footer__col_left_logo {
+                width: 20%;
+                display: flex;
+                align-items: center;
+            }
+            .footer__col_left_logo_image {
+                width: 100%;
+                max-width: 130px;
+            }
+            .footer__col_left_description {
+                width: 80%;
+                padding: 10px;
+            }
+            .footer__button:hover,
+            .footer__button:active,
+            .footer__button:visited,
+            .footer__button {
+                display: inline-block;
+                padding: 5px 20px;
+                color: #fff;
+                text-decoration: none;
+                border-radius: 50px;
+                margin-right: 10px;
+                font-weight: 700;
+            }
+            .footer__button__azul {
+                background-color: #0071ba;
+            }
+            .footer__button__azul_claro {
+                background-color: #29a9e0;
+            }
+            .footer__button__rojo {
+                background-color: #e92027;
+                margin-bottom: 20px;
+            }
+            .footer__text {
+                color: #fff;
+                margin: 20px 0;
+                font-size: .8rem;
+            }
+            .footer__social_link:hover,
+            .footer__social_link:active,
+            .footer__social_link:visited,
+            .footer__social_link {
+                display: inline-block;
+                border: 2px solid #fff;
+                border-radius: 50%;
+                padding: 8px;
+                text-align: center;
+            }
+            .footer__social_icon {
+                width: 20px;
+                height: 20px;
+                vertical-align: middle;
+            }
+            .footer__col_right {
+                padding: 10px 0 0 30px;
+            }
+            .footer__form {
+                margin-top: 80px;
+            }
+            .footer__input_mail {
+                background: none;
+                outline: none;
+                border: 1px solid #fff;
+                border-radius: 50px;
+                padding: 8px 20px;
+                color: #fff;
+                font-size: .9rem;
+                margin: 0 20px 10px 0;
+                max-width: 270px;
+                width: 100%;
+            }
+            .footer__input_submit {
+                background-color: #fff;
+                color: #1b2e57;
+                border: none;
+                outline: none;
+                padding: 9px 20px;
+                border-radius: 50px;
+                font-weight: 500;
+                cursor: pointer;
+            }
+            .footer__nav {
+                margin-top: 80px;
+            }
+            .footer__list {
+                text-align: center;
+            }
+            .footer__list_item {
+                display: inline-block;
+                margin: 0 5px;
+                padding: 5px 0;
+                margin-bottom: 5px;
+            }
+            .footer__list_item__link:hover,
+            .footer__list_item__link:active,
+            .footer__list_item__link:visited,
+            .footer__list_item__link {
+                color: #fff;
+                font-weight: 500;
+                text-decoration: none;
+                font-size: .9rem;
+            }
+            .footer__right {
+                text-align: center;
+                padding: 30px 0;
+            }
+            .footer__logo {
+                margin-bottom: 10px;
+            }
+            @media screen and (max-width: 1300px) {
+                .footer__button:hover, 
+                .footer__button:active, 
+                .footer__button:visited, 
+                .footer__button {
+                    padding: 5px 17px;
+                    margin-right: 5px;
+                    margin-bottom: 10px;
+                }
+            }
+            @media screen and (max-width: 767px) {
+                .footer__container {
+                    border-radius: 0;
+                }
+                .footer__col_right, 
+                .footer__col_left {
+                    width: 100%;
+                    margin-bottom: 30px;
+                }
+                .footer__col_left_description .footer__text.mt-80 {
+                    margin-top: 30px !important;
+                }
+                .footer__col_left {
+                    flex-wrap: wrap;
+                }
+                .footer__col_left_logo {
+                    text-align: center;
+                    margin-bottom: 30px;
+                }
+                .footer__col_left_logo_image {
+                    margin: 0 auto;
+                }
+                .footer__col_left_logo,
+                .footer__col_left_description {
+                    width: 100%;
+                }
+                .footer__col_right {
+                    margin-top: 50px;
+                    padding-left: 0;
+                }
+                .footer__col_right,
+                .footer__col_left_description {
+                    text-align: center;
+                }
+                .footer__button.footer__button__azul,
+                .footer__button.footer__button__rojo {
+                    display: inline-block;
+                    margin: 0 auto 10px;
+                }
+                .footer__form {
+                    margin-top: 10px;
+                }
+            }
+        </style>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="container">
+                    <section class="footer__row">
+                        <div class="footer__col_left">
+                            <div class="footer__col_left_logo">
+                                <img src="./assets/icons/remax-balloon.png" alt="Logo Remax" class="footer__col_left_logo_image">
+                            </div>
+                            <div class="footer__col_left_description">
+                                <a href="#" class="footer__button footer__button__azul">Abre tu Franquicia</a>
+                                <a href="#" class="footer__button footer__button__azul_claro">Unete a RE/MAX</a>
+                                <p class="footer__text mt-80">RE/MAX es una empresa multinacional, que permite Capacitar, Educar y relacionar a los Asesores y gestores de negocios con el mercado inmobiliario del Mundo, a través de su conocimiento y relaciones nacionales y extranjeras. Desde la primer oficina que abrió sus puertas en 1973 en Denver, Colorado, RE/MAX se ha convertido en una red global de bienes raíces de oficinas de propiedad de franquiciados que funciona con cerca de 90.000 asociados de ventas.</p>
+                                <a href="https://www.facebook.com/remaxrd" target="_blank" class="footer__social_link"><img src="./assets/icons/facebook.png" alt="Facebook" class="footer__social_icon"></a>
+                                <a href="#" target="_blank" class="footer__social_link"><img src="./assets/icons/whatsapp.png" alt="Whatsapp" class="footer__social_icon"></a>
+                                <a href="https://twitter.com/Remax_RD" target="_blank" width="20px" height="20px" class="footer__social_link"><img src="./assets/icons/twitter.png" alt="Twitter" class="footer__social_icon"></a>
+                                <a href="https://instagram.com/remax_rd?igshid=YmMyMTA2M2Y=" target="_blank" class="footer__social_link"><img src="./assets/icons/instagram-symbol.png" alt="Instagram" class="footer__social_icon"></a>
+                            </div>
+                        </div>
+
+                        <div class="footer__col_right">
+                            <a href="#" class="footer__button footer__button__rojo">REGISTRATE</a>
+                            <p class="footer__text">Mejora tu experiencia de búsqueda. Regístrate para que puedas guardar las propiedades de tu interés y recibir actualizaciones de las mismas.</p>
+
+                            <form action="" class="footer__form" method="post">
+                                <p class="footer__text">Suscribete y recibe las actualizaciones de nuevas propieades</p>
+                                <input type="email" name="email" id="" class="footer__input_mail" placeholder="Email"/>
+                                <input type="submit" class="footer__input_submit" value="SUSCRIBIR">
+                            </form>
+                        </div>
+                    </section>
+
+                    <nav class="footer__nav">
+                        <ul class="footer__list">
+                            <li class="footer__list_item"><a href="#" class="footer__list_item__link">Propiedades</a></li>
+                            <li class="footer__list_item"><a href="#" class="footer__list_item__link">Agentes</a></li>
+                            <li class="footer__list_item"><a href="#" class="footer__list_item__link">Franquicias</a></li>
+                            <li class="footer__list_item"><a href="#" class="footer__list_item__link">Servicios</a></li>
+                            <li class="footer__list_item"><a href="#" class="footer__list_item__link">Blog</a></li>
+                            <li class="footer__list_item"><a href="#" class="footer__list_item__link">Alquilar</a></li>
+                            <li class="footer__list_item"><a href="#" class="footer__list_item__link">Collection</a></li>
+                            <li class="footer__list_item"><a href="#" class="footer__list_item__link">Contáctanos</a></li>
+                            <li class="footer__list_item"><a href="#" class="footer__list_item__link">Comprar</a></li>
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
+            <div class="container">
+                <section class="footer__right">
+                    <img src="./assets/icons/REMAX-logo.svg" alt="Logo Remax" class="footer__logo" width="200px">
+                    <p class="footer__right_texy">Copyright © Todos los derechos reservados 2022, REMAX RD</p>
+                </section>
+            </div>
+        </footer>
+        <!-- ************************** END FOOTER ************************** -->
+    </body>
+</html>
