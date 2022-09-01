@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>REMAX RD</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/styles/main.css">
+        <link rel="stylesheet" href="./assets/styles/proyecttos_exclusivos.css">
+    </head>
+    <body>
+        <!-- ************************** HEADER ************************** -->
+        <style>
+            .header {
+                width: 100%;
+                background-color: #fff;
+                padding: 20px 0;
+                position: sticky;
+                top: 0;
+                z-index: 1000;
+                box-shadow: 1px 0px 3px 0px #0003;
+            }
+            .header__container {
+                display: flex;
+                justify-content: space-between;
+                position: relative;
+            }
+            .navbar {
+                display: flex;
+                align-items: center;
+            }
+            .navbar_desktop {
+                display: none;
+            }
+            .navbar_desktop__list_items {
+                list-style: none;
+            }
+            .navbar_desktop__item {
+                display: inline-block;
+                margin-right: 30px;
+                font-weight: 700;
+            }
+            .logo__link,
+            .logo__link:hover,
+            .logo__link:active,
+            .logo__link:visited,
+            .navbar_desktop__item_link,
+            .navbar_desktop__item_link:hover,
+            .navbar_desktop__item_link:active,
+            .navbar_desktop__item_link:visited {
+                text-decoration: none;
+                color: inherit;
+            }
+            .navbar_desktop__languaje {
+                border-left: 1px solid #000;
+                border-right: 1px solid #000;
+                padding: 0 15px;
+                font-weight: 700;
+            }
+            .navbar_desktop__languaje_link {
+                display: inline-block;
+                margin-left: 15px;
+            }
+            .navbar_desktop__languaje_icon {
+                width: 30px;
+                vertical-align: middle;
+            }
+            .navbar_mobile {
+                margin: 0 10px;
+            }
+            .navbar_mobile__toggle_menu {
+                cursor: pointer;
+            }
+            button.header__register_btn {
+                position: absolute;
+                right: 10%;
+                top: calc(100% + 20px);
+                background-color: #E92027;
+                color: #fff;
+                border: none;
+                outline: none;
+                padding: 10px 30px;
+                border-radius: 0 0 10px 10px;
+                font-weight: 700;
+                cursor: pointer;
+            }
+            @media screen and (min-width: 992px) {
+                .navbar_desktop {
+                    display: flex;
+                }
+                .navbar_mobile {
+                    display: none;
+                }
+            }
+        </style>
+        <header class="header">
+            <div class="container header__container">
+                <div class="logo">
+                    <a href="#" class="logo__link">
+                        <img src="./assets/icons/REMAX-logo.svg" alt="Logo Remax" class="logo_image" width="150px" />
+                    </a>
+                </div>
+        
+                <nav class="navbar">
+                    <div class="navbar_desktop">
+                        <ul class="navbar_desktop__list_items">
+                            <li class="navbar_desktop__item"><a href="#" class="navbar_desktop__item_link">Comprar</a></li>
+                            <li class="navbar_desktop__item"><a href="#" class="navbar_desktop__item_link">Alquilar</a></li>
+                            <li class="navbar_desktop__item"><a href="#" class="navbar_desktop__item_link">Agencias / Agentes</a></li>
+                            <li class="navbar_desktop__item"><a href="#" class="navbar_desktop__item_link">Blog</a></li>
+                            <li class="navbar_desktop__item"><a href="#" class="navbar_desktop__item_link">Contáctanos</a></li>
+                        </ul>
+                        <div class="navbar_desktop__languaje">
+                            IDIOMA
+                            <a href="#" class="navbar_desktop__languaje_link">
+                                <img src="./assets/icons/dominican-republic-flag.jpg" alt="Bandera República Dominicana" class="navbar_desktop__languaje_icon">
+                            </a>
+                            <a href="#" class="navbar_desktop__languaje_link">
+                                <img src="./assets/icons/united-states-flag.jpg" alt="Bandera Estados Unidos" class="navbar_desktop__languaje_icon">
+                            </a>
+                        </div>
+                    </div>
+        
+                    <div class="navbar_mobile">
+                        <span class="navbar_mobile__toggle_menu">
+                            <img src="./assets/icons/menu.svg" alt="Boton de munú" class="navbar_mobile__button" width="30px" height="30px">
+                        </span>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- ************************** END HEADER ************************** -->
+
+
+        <!-- ************************** COVER ************************** -->
+        <style>
+            .cover {
+                width: 100%;
+                height: 60vw;
+                max-height: 774px;
+                background-position: bottom center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin-bottom: -200px;
+            }
+            @media screen and (max-width: 991px) {
+                .cover {
+                    margin-bottom: -150px;
+                }
+            }
+            @media screen and (max-width: 767px) {
+                .cover {
+                    margin-bottom: -50px;
+                }
+            }
+        </style>
+        <article class="cover" style="background-image: url('./assets/images/young-people-raising-hand-to-ask-question-at-team-training-curious-black-employee-or-conference-semi.jpg');"></article>
+        <!-- ************************** END COVER ************************** -->
+        
+
+        <!-- ************************** FAQ ************************** -->
+        <style>
+            .faq {
+                background-color: #F3F3F5;
+                border-radius: 200px 0px 0px 0px;
+                padding: 130px 0 300px;
+            }
+            .faq__title {
+                font-size: 2.812rem;
+                font-weight: 700;
+                margin: 0 auto 100px;
+                max-width: 320px;
+                line-height: 43px;
+            }
+            .faq__title_sub {
+                font-size: 1.875rem;
+                font-weight: 700;
+                display: block;
+                text-align: right;
+            }
+            @media screen and (max-width: 991px) {
+                .faq {
+                    border-radius: 130px 0px 0px 0px;
+                }
+            }
+            @media screen and (max-width: 767px) {
+                .faq {
+                    border-radius: 50px 0px 0px 0px;
+                }
+                .faq__title {
+                    font-size: 2.212rem;
+                    max-width: 250px;
+                }
+                .faq__title_sub {
+                    font-size: 1.375rem;
+                }
+            }
+
+            /* CARD */
+            .faq__card {
+                padding: 30px 20px 0 50px;
+                transition: all 1s;
+            }
+            
+            .faq__head {
+                display: flex;
+                transition: all 1s;
+            }
+            .faq__question,
+            .faq__question::after {
+                font-size: 1rem;
+                font-weight: 500;
+                cursor: pointer;
+            }
+            .faq__question {
+                width: calc(100% - 35px);
+                margin-bottom: 0;
+                text-align: left;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                position: relative;
+            }
+            .faq__question::after {
+                content: '+';
+                width: 35px;
+                height: 35px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                top: 0;
+                right: -35px;
+            }
+            .faq__body {
+                overflow: hidden;
+                height: 0;
+                transition: all 1s;
+            }
+            .faq__response {
+                font-size: .938rem;
+                font-weight: 500;
+                color: #8C8C8C;
+                line-height: 15px;
+                width: calc(100% - 35px);
+            }
+
+            /* ACTIVOS */
+            .faq__card_active {
+                background-color: #fff;
+                padding-bottom: 50px;
+                padding-top: 30px;
+                border-radius: 30px;
+                margin-top: 25px;
+            }
+            .faq__card_active .faq__head {
+                margin-bottom: 50px;
+            }
+            .faq__card_active .faq__body {
+                height: fit-content;
+            }
+            .faq__card_active .faq__question::after {
+                content: '—';
+                font-size: .7rem;
+                font-weight: 700;
+            }
+        </style>
+        <article class="faq">
+            <div class="container">
+                <h1 class="faq__title">Preguntas <span class="faq__title_sub">frecuentes</span></h1>
+
+                <!-- 
+                    Para mostrar el contenido del card agregar la clase: faq__card_active
+                 -->
+                <div class="faq__card">
+                    <section class="faq__head">
+                        <h2 class="faq__question">¿Cuáles son los beneficios de entrar a RE/MAX?</h2>
+                        
+                    </section>
+
+                    <section class="faq__body">
+                        <p class="faq__response">Ser parte de RE/MAX RD te brinda infinitas ventajas y oportunidades a nivel local e internacional. Dentro de los beneficios que recibes están: • ¡El uso de la marca! RE/MAX es la marca inmobiliaria más conocida del mundo. Una marca sólida con respeto al público, lo que se puede traducir en mejores y potencialmente más compradores y vendedores, y mejores y potencialmente más comisiones. • Acceso a un inventario de mas de 10,000 propiedades tanto en venta como alquiler. • La oportunidad de recibir referimientos nacionales e internacionales. Amplio inventario de propiedades para la venta, gracias a nuestro exclusivo sistema de referidos, los agentes pueden compartir o referir operaciones con otras oficinas RE/MAX, así como contactos y clientes tanto compradores como vendedores, siendo ésta una importante fuente de beneficio. • Con RE/MAX, tienes una gran cantidad de recursos tecnológicos de vanguardia que pueden ayudarte a hacer más negocios. Contamos con nuestro MaxCore, el sistema local de manejo de propiedades, y el MaxCenter, el sistema de RE/MAX International, que cuenta con herramientas de educación, promoción, referimientos, entre otras. Contamos también con herramientas y apoyo para crear tours virtuales para presentar las propiedades en video en la páginas o presentaciones y así poder mostrar con detalles cada espacio de la propiedad. • Una biblioteca completa de materiales de capacitación para tu desarrollo profesional y personal. • Capacitación continua por medio a RE/MAX University la cual tiene más de 1,000 horas de entrenamiento y cursos de certificación. Es en línea y está disponible todos los días de manera ilimitada. Además, contamos con la Academia RE/MAX en el país. • Adiestramiento a través del programa Succeed, que te entrena en el negocio con lo que necesita hacer - y hacer bien- todos los días para construir una carrera de éxito. • Acceso para participar en convenciones de clase mundial donde aprenderás y establecerás nuevos contactos de negocios, además de divertirse. • Un programa de publicidad global innovador. • La oportunidad de tener un negocio internacional con una inversión mínima. • Oportunidades de reconocimiento regional e internacional. • Normas que regulan a todos los socios con un sistema de ética y de consecuencia. • Asesoría financiera y legal. Apoyo en los procesos administrativos para validar el cumplimiento con las leyes. • Relación estrecha con el sector bancario y facilidades exclusivas para facilitar las negociaciones con clientes. • Disponibilidad de depuración de clientes a través de Buró de Crédito de manera segura y expedita. • Asistencia permanente tanto en lo referente a su trato con los clientes y su forma de introducir el concepto RE/MAX, como en las inquietudes de orden legal, mercadológicas y funcionales que puedan surgir. • La oportunidad de percibir otros ingresos a través de los referimientos hipotecarios.</p>
+                    </section>
+                </div>
+
+                <div class="faq__card">
+                    <section class="faq__head">
+                        <h2 class="faq__question">¿Cuál es la diferencia entre las oficinas RE/MAX?</h2>
+                        
+                    </section>
+
+                    <section class="faq__body">
+                        <p class="faq__response">Cada oficina es de propiedad y operación independiente, aunque todas reportan a RE/MAX-RD. La diferencia entre las oficinas es el tamaño, ubicación, y el toque que le de cada Broker/Owner a su oficina. Algunas pueden variar en las cuotas de oficina.</p>
+                    </section>
+                </div>
+
+                <div class="faq__card">
+                    <section class="faq__head">
+                        <h2 class="faq__question">¿Qué es RE/MAX RD y cuál es la diferencia entre esta y las oficinas?</h2>
+                        
+                    </section>
+
+                    <section class="faq__body">
+                        <p class="faq__response">RE/MAX-RD es la casa matriz en República Dominicana. Esta tiene el derecho de vender franquicias y desarrollar el negocio en el país. RE/MAX RD hoy consolida todas las iniciativas y se convierte en la empresa líder dentro del sector inmobiliario en cantidad de propiedades, número de ventas, franquicias desarrolladas, ética y servicio. Todas las oficinas del país reportan a RE/MAX-RD y se rigen bajo las directrices de la misma.</p>
+                    </section>
+                </div>
+
+                <div class="faq__card">
+                    <section class="faq__head">
+                        <h2 class="faq__question">¿Puedo ingresar sin experiencia en ventas?</h2>
+                        
+                    </section>
+
+                    <section class="faq__body">
+                        <p class="faq__response">Si. RE/MAX proporciona todas las herramientas y entrenamientos para que cualquier persona pueda ser un Agente Inmobiliario exitoso.</p>
+                    </section>
+                </div>
+
+                <div class="faq__card">
+                    <section class="faq__head">
+                        <h2 class="faq__question">¿Cuánto me paga RE/MAX?</h2>
+                        
+                    </section>
+
+                    <section class="faq__body">
+                        <p class="faq__response">Los agentes de RE/MAX trabajan bajo la modalidad de contratista independiente. RE/MAX no les paga salario a sus agentes, pues no son empleados. El ingreso de los agentes viene de las comisiones por ventas, alquileres o referimientos hipotecarios.</p>
+                    </section>
+                </div>
+
+                <div class="faq__card">
+                    <section class="faq__head">
+                        <h2 class="faq__question">¿Cómo funciona el esquema de comisión cuando vendo o alquilo una propiedad?</h2>
+                        
+                    </section>
+
+                    <section class="faq__body">
+                        <p class="faq__response">Cada transacción tiene dos partes: la captación y la venta. Por lo general, la comisión total de una transacción es un 5% del valor del inmueble en caso de ser venta; y un mes de renta en caso de ser un alquiler. Ese 5% o ese mes de renta se divide de la siguiente manera: 50% para el agente captador (quien tiene la propiedad listada) y 50% para el agente que tiene el cliente comprador.</p>
+                    </section>
+                </div>
+
+                <div class="faq__card">
+                    <section class="faq__head">
+                        <h2 class="faq__question">¿Cuánto dinero me voy a ganar dentro de RE/MAX?</h2>
+                        
+                    </section>
+
+                    <section class="faq__body">
+                        <p class="faq__response">Nuestros agentes son los más productivos del mercado, sin embargo, no podemos garantizar un ingreso. El negocio de los bienes raíces es bien lucrativo y no hay límites de ganancias, siempre y cuando se le dedique el tiempo y el enfoque necesario al negocio.</p>
+                    </section>
+                </div>
+
+                <div class="faq__card">
+                    <section class="faq__head">
+                        <h2 class="faq__question">¿Por qué tengo que pagar para estar en RE/MAX?</h2>
+                        
+                    </section>
+
+                    <section class="faq__body">
+                        <p class="faq__response">Toda la plataforma y la infraestructura que ofrece RE/MAX, así como la marca, tiene un costo. Esta cuota nos ayuda a sostener el negocio y seguir innovando para ofrecerle más servicios a nuestros agentes.</p>
+                    </section>
+                </div>
+
+                <div class="faq__card">
+                    <section class="faq__head">
+                        <h2 class="faq__question">¿Cuál es la diferencia entre los splits de comisión?</h2>
+                        
+                    </section>
+
+                    <section class="faq__body">
+                        <p class="faq__response">Dentro de cada Split de comisión el Agente se queda con el porcentaje establecido, ya sea mayor o menor. Mientras más comisión reciba el agente, mayor será la cuota mensual.</p>
+                    </section>
+                </div>
+
+                <div class="faq__card faq__card_active">
+                    <section class="faq__head">
+                        <h2 class="faq__question">¿Cuál es la diferencia entre asociado senior y asociado junior?</h2>
+                        
+                    </section>
+
+                    <section class="faq__body">
+                        <p class="faq__response">Un Asociado, tanto Senior como Junior, es un profesional inmobiliario a tiempo completo que, habiéndose suscrito bajo un acuerdo de contratista independiente con la empresa, capta, mercadea, vende, alquila y/o administra inmuebles de terceros a través de una dinámica actividad en el mercado inmobiliario, que permite prospectar propietarios y clientes garantizando un servicio de excelencia que ofrezca alternativas competitivas que resulten atractivas para estos. El Asociado Senior trabaja de manera independiente y le reporta directamente a la oficina. Un Asociado Junior hace sus labores de Agente Inmobiliario dentro de un equipo. El líder de equipo se encarga de entrenar, acompañar y guiar al Asociado Junior en todo el proceso de ventas, desde su entrada a la marca. A cambio, el Asociado Junior comparte su comisión con el líder de equipo. El líder de equipo es quien se encarga de reportar a la oficina por el Asociado Junior.</p>
+                    </section>
+                </div>
+
+                <div class="faq__card">
+                    <section class="faq__head">
+                        <h2 class="faq__question">¿Cuál es la diferencia entre la cuota regional y la cuota de oficina?</h2>
+                        
+                    </section>
+
+                    <section class="faq__body">
+                        <p class="faq__response">La cuota regional es una cuota que cobra RE/MAX-RD a cada agente inmobiliario. La cuota de oficina es la cuota que cobra RE/MAX Metropolitana para mantener la infraestructura.</p>
+                    </section>
+                </div>
+
+                <div class="faq__card">
+                    <section class="faq__head">
+                        <h2 class="faq__question">¿Puedo cambiar de asociado junior a asociado senior?</h2>
+                        
+                    </section>
+
+                    <section class="faq__body">
+                        <p class="faq__response">Si, siempre y cuando cuente con la aprobación de su líder de equipo y de la administración.</p>
+                    </section>
+                </div>
+
+                <div class="faq__card">
+                    <section class="faq__head">
+                        <h2 class="faq__question">¿Puedo cambiar de equipo luego de haber entrado?</h2>
+                        
+                    </section>
+
+                    <section class="faq__body">
+                        <p class="faq__response">Si, siempre y cuando cuente con la aprobación de ambos líderes de equipo.</p>
+                    </section>
+                </div>
+
+                <div class="faq__card">
+                    <section class="faq__head">
+                        <h2 class="faq__question">¿Tengo que producir un mínimo de comisiones para permanecer en la marca?</h2>
+                        
+                    </section>
+
+                    <section class="faq__body">
+                        <p class="faq__response">Si. Cada plan tiene un mínimo de comisiones a producir. Este se toma en cuenta a partir del segundo año, cuando ya el agente tiene conocimiento del negocio dentro de la marca.</p>
+                    </section>
+                </div>
+
+                <div class="faq__card">
+                    <section class="faq__head">
+                        <h2 class="faq__question">¿Qué pasa si no vendo en un mes?</h2>
+                        
+                    </section>
+
+                    <section class="faq__body">
+                        <p class="faq__response">No pasa nada. Cada negociación toma su tiempo para cerrarse, y un agente pudiera tener varias negociaciones en proceso en un mes y cerrarlas en el mes siguiente.</p>
+                    </section>
+                </div>
+
+                <div class="faq__card">
+                    <section class="faq__head">
+                        <h2 class="faq__question">¿RE/MAX me da las propiedades para que las venda?</h2>
+                        
+                    </section>
+
+                    <section class="faq__body">
+                        <p class="faq__response">En algunas ocasiones puede ocurrir que la oficina les proporcione propiedades a los agentes, ya sea que entren por las promociones que realizamos o por llamadas a la recepción. Sin embargo, cada agente debe conseguir sus propias captaciones.</p>
+                    </section>
+                </div>
+
+                <div class="faq__card">
+                    <section class="faq__head">
+                        <h2 class="faq__question">¿Puedo promocionar y vender las propiedades de otros agentes?</h2>
+                        
+                    </section>
+
+                    <section class="faq__body">
+                        <p class="faq__response">Una de las ventajas que ofrece RE/MAX es que todos los agentes tienen acceso a todo el inventario, y todos pueden promocionar y vender las propiedades de otros colegas. Esta dinámica genera más oportunidades de negocio. Así mismo, todos los Agentes pueden tener su página web/dominio con sunombre.com vinculada a los sistemas y plataformas de RE/MAX-RD. Esto permite que todas las propiedades que se encuentran listadas en la página web aparezcan con el perfil propio de ese agente. (El Agente Asociado debe pagar por el servicio de compra de dominio y/o vinculación.)</p>
+                    </section>
+                </div>
+
+                <div class="faq__card">
+                    <section class="faq__head">
+                        <h2 class="faq__question">¿Tengo que cumplir un horario laboral?</h2>
+                        
+                    </section>
+
+                    <section class="faq__body">
+                        <p class="faq__response">No, cada agente es independiente y le dedica el tiempo que considere al negocio, ya desde la oficina o su hogar.</p>
+                    </section>
+                </div>
+            </div>
+        </article>
+        <!-- ************************** END FAQ ************************** -->
+
+
+        <!-- ************************** FOOTER ************************** -->
+        <style>
+            .footer {
+                background-color: #fff;
+            }
+            .footer__container {
+                background-color: #1f3564;
+                border-radius: 0 200px 0 0;
+                padding: 50px 0;
+            }
+            .footer__row {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            .footer__col_right,
+            .footer__col_left {
+                width: 50%;
+                max-width: 550px;
+            }
+            .footer__col_left {
+                display: flex;
+            }
+            .footer__col_left_logo {
+                width: 20%;
+                display: flex;
+                align-items: center;
+            }
+            .footer__col_left_logo_image {
+                width: 100%;
+                max-width: 130px;
+            }
+            .footer__col_left_description {
+                width: 80%;
+                padding: 10px;
+            }
+            .footer__button:hover,
+            .footer__button:active,
+            .footer__button:visited,
+            .footer__button {
+                display: inline-block;
+                padding: 5px 20px;
+                color: #fff;
+                text-decoration: none;
+                border-radius: 50px;
+                margin-right: 10px;
+                font-weight: 700;
+            }
+            .footer__button__azul {
+                background-color: #0071ba;
+            }
+            .footer__button__azul_claro {
+                background-color: #29a9e0;
+            }
+            .footer__button__rojo {
+                background-color: #e92027;
+                margin-bottom: 20px;
+            }
+            .footer__text {
+                color: #fff;
+                margin: 20px 0;
+                font-size: .8rem;
+            }
+            .footer__social_link:hover,
+            .footer__social_link:active,
+            .footer__social_link:visited,
+            .footer__social_link {
+                display: inline-block;
+                border: 2px solid #fff;
+                border-radius: 50%;
+                padding: 8px;
+                text-align: center;
+            }
+            .footer__social_icon {
+                width: 20px;
+                height: 20px;
+                vertical-align: middle;
+            }
+            .footer__col_right {
+                padding: 10px 0 0 30px;
+            }
+            .footer__form {
+                margin-top: 80px;
+            }
+            .footer__input_mail {
+                background: none;
+                outline: none;
+                border: 1px solid #fff;
+                border-radius: 50px;
+                padding: 8px 20px;
+                color: #fff;
+                font-size: .9rem;
+                margin: 0 20px 10px 0;
+                max-width: 270px;
+                width: 100%;
+            }
+            .footer__input_submit {
+                background-color: #fff;
+                color: #1b2e57;
+                border: none;
+                outline: none;
+                padding: 9px 20px;
+                border-radius: 50px;
+                font-weight: 500;
+                cursor: pointer;
+            }
+            .footer__nav {
+                margin-top: 80px;
+            }
+            .footer__list {
+                text-align: center;
+            }
+            .footer__list_item {
+                display: inline-block;
+                margin: 0 5px;
+                padding: 5px 0;
+                margin-bottom: 5px;
+            }
+            .footer__list_item__link:hover,
+            .footer__list_item__link:active,
+            .footer__list_item__link:visited,
+            .footer__list_item__link {
+                color: #fff;
+                font-weight: 500;
+                text-decoration: none;
+                font-size: .9rem;
+            }
+            .footer__right {
+                text-align: center;
+                padding: 30px 0;
+            }
+            .footer__logo {
+                margin-bottom: 10px;
+            }
+            @media screen and (max-width: 1300px) {
+                .footer__button:hover, 
+                .footer__button:active, 
+                .footer__button:visited, 
+                .footer__button {
+                    padding: 5px 17px;
+                    margin-right: 5px;
+                    margin-bottom: 10px;
+                }
+            }
+            @media screen and (max-width: 767px) {
+                .footer__container {
+                    border-radius: 0;
+                }
+                .footer__col_right, 
+                .footer__col_left {
+                    width: 100%;
+                    margin-bottom: 30px;
+                }
+                .footer__col_left_description .footer__text.mt-80 {
+                    margin-top: 30px !important;
+                }
+                .footer__col_left {
+                    flex-wrap: wrap;
+                }
+                .footer__col_left_logo {
+                    text-align: center;
+                    margin-bottom: 30px;
+                }
+                .footer__col_left_logo_image {
+                    margin: 0 auto;
+                }
+                .footer__col_left_logo,
+                .footer__col_left_description {
+                    width: 100%;
+                }
+                .footer__col_right {
+                    margin-top: 50px;
+                    padding-left: 0;
+                }
+                .footer__col_right,
+                .footer__col_left_description {
+                    text-align: center;
+                }
+                .footer__button.footer__button__azul,
+                .footer__button.footer__button__rojo {
+                    display: inline-block;
+                    margin: 0 auto 10px;
+                }
+                .footer__form {
+                    margin-top: 10px;
+                }
+            }
+        </style>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="container">
+                    <section class="footer__row">
+                        <div class="footer__col_left">
+                            <div class="footer__col_left_logo">
+                                <img src="./assets/icons/remax-balloon.png" alt="Logo Remax" class="footer__col_left_logo_image">
+                            </div>
+                            <div class="footer__col_left_description">
+                                <a href="#" class="footer__button footer__button__azul">Abre tu Franquicia</a>
+                                <a href="#" class="footer__button footer__button__azul_claro">Unete a RE/MAX</a>
+                                <p class="footer__text mt-80">RE/MAX es una empresa multinacional, que permite Capacitar, Educar y relacionar a los Asesores y gestores de negocios con el mercado inmobiliario del Mundo, a través de su conocimiento y relaciones nacionales y extranjeras. Desde la primer oficina que abrió sus puertas en 1973 en Denver, Colorado, RE/MAX se ha convertido en una red global de bienes raíces de oficinas de propiedad de franquiciados que funciona con cerca de 90.000 asociados de ventas.</p>
+                                <a href="https://www.facebook.com/remaxrd" target="_blank" class="footer__social_link"><img src="./assets/icons/facebook.png" alt="Facebook" class="footer__social_icon"></a>
+                                <a href="#" target="_blank" class="footer__social_link"><img src="./assets/icons/whatsapp.png" alt="Whatsapp" class="footer__social_icon"></a>
+                                <a href="https://twitter.com/Remax_RD" target="_blank" width="20px" height="20px" class="footer__social_link"><img src="./assets/icons/twitter.png" alt="Twitter" class="footer__social_icon"></a>
+                                <a href="https://instagram.com/remax_rd?igshid=YmMyMTA2M2Y=" target="_blank" class="footer__social_link"><img src="./assets/icons/instagram-symbol.png" alt="Instagram" class="footer__social_icon"></a>
+                            </div>
+                        </div>
+
+                        <div class="footer__col_right">
+                            <a href="#" class="footer__button footer__button__rojo">REGISTRATE</a>
+                            <p class="footer__text">Mejora tu experiencia de búsqueda. Regístrate para que puedas guardar las propiedades de tu interés y recibir actualizaciones de las mismas.</p>
+
+                            <form action="" class="footer__form" method="post">
+                                <p class="footer__text">Suscribete y recibe las actualizaciones de nuevas propieades</p>
+                                <input type="email" name="email" id="" class="footer__input_mail" placeholder="Email"/>
+                                <input type="submit" class="footer__input_submit" value="SUSCRIBIR">
+                            </form>
+                        </div>
+                    </section>
+
+                    <nav class="footer__nav">
+                        <ul class="footer__list">
+                            <li class="footer__list_item"><a href="#" class="footer__list_item__link">Propiedades</a></li>
+                            <li class="footer__list_item"><a href="#" class="footer__list_item__link">Agentes</a></li>
+                            <li class="footer__list_item"><a href="#" class="footer__list_item__link">Franquicias</a></li>
+                            <li class="footer__list_item"><a href="#" class="footer__list_item__link">Servicios</a></li>
+                            <li class="footer__list_item"><a href="#" class="footer__list_item__link">Blog</a></li>
+                            <li class="footer__list_item"><a href="#" class="footer__list_item__link">Alquilar</a></li>
+                            <li class="footer__list_item"><a href="#" class="footer__list_item__link">Collection</a></li>
+                            <li class="footer__list_item"><a href="#" class="footer__list_item__link">Contáctanos</a></li>
+                            <li class="footer__list_item"><a href="#" class="footer__list_item__link">Comprar</a></li>
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
+            <div class="container">
+                <section class="footer__right">
+                    <img src="./assets/icons/REMAX-logo.svg" alt="Logo Remax" class="footer__logo" width="200px">
+                    <p class="footer__right_texy">Copyright © Todos los derechos reservados 2022, REMAX RD</p>
+                </section>
+            </div>
+        </footer>
+        <!-- ************************** END FOOTER ************************** -->
+    </body>
+</html>
