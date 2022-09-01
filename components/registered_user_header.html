@@ -1,0 +1,132 @@
+<style>
+.header {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 1px 0px 3px 0px #0003;
+}
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+}
+.navbar_desktop {
+    display: none;
+}
+.navbar_desktop__list_items {
+    list-style: none;
+}
+.navbar_desktop__item {
+    display: inline-block;
+    margin-right: 30px;
+    font-weight: 700;
+}
+.logo__link,
+.logo__link:hover,
+.logo__link:active,
+.logo__link:visited,
+.navbar_desktop__item_link,
+.navbar_desktop__item_link:hover,
+.navbar_desktop__item_link:active,
+.navbar_desktop__item_link:visited {
+    text-decoration: none;
+    color: inherit;
+}
+.navbar_desktop__languaje {
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    padding: 0 15px;
+    font-weight: 700;
+}
+.navbar_desktop__languaje_link {
+    display: inline-block;
+    margin-left: 15px;
+}
+.navbar_desktop__languaje_icon {
+    width: 30px;
+    vertical-align: middle;
+}
+.navbar_mobile {
+    margin: 0 10px;
+}
+.navbar_mobile__toggle_menu {
+    cursor: pointer;
+}
+.header__profile_btn {
+    right: 10%;
+    position: absolute;
+    background-color: #E92027;
+    top: calc(100% + 20px);
+    border: none;
+    color: #fff;
+    outline: none;
+    padding: 10px 30px;
+    border-radius: 0 0 20px 20px;
+    font-size: .938rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+.header__profile_btn__icon {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+@media screen and (min-width: 992px) {
+    .navbar_desktop {
+        display: flex;
+    }
+    .navbar_mobile {
+        display: none;
+    }
+}
+@media screen and (max-width: 991px) {
+    .header__profile_btn {
+        display: none;
+    }
+}
+</style>
+
+<header class="header">
+    <div class="container header__container">
+        <div class="logo">
+            <a href="#" class="logo__link">
+                <img src="./assets/icons/REMAX-logo.svg" alt="Logo Remax" class="logo_image" width="150px" />
+            </a>
+        </div>
+
+        <nav class="navbar">
+            <div class="navbar_desktop">
+                <ul class="navbar_desktop__list_items">
+                    <li class="navbar_desktop__item"><a href="#" class="navbar_desktop__item_link">Comprar</a></li>
+                    <li class="navbar_desktop__item"><a href="#" class="navbar_desktop__item_link">Alquilar</a></li>
+                    <li class="navbar_desktop__item"><a href="#" class="navbar_desktop__item_link">Agencias / Agentes</a></li>
+                    <li class="navbar_desktop__item"><a href="#" class="navbar_desktop__item_link">Blog</a></li>
+                    <li class="navbar_desktop__item"><a href="#" class="navbar_desktop__item_link">Contáctanos</a></li>
+                </ul>
+                <div class="navbar_desktop__languaje">
+                    IDIOMA
+                    <a href="#" class="navbar_desktop__languaje_link">
+                        <img src="./assets/icons/dominican-republic-flag.jpg" alt="Bandera República Dominicana" class="navbar_desktop__languaje_icon">
+                    </a>
+                    <a href="#" class="navbar_desktop__languaje_link">
+                        <img src="./assets/icons/united-states-flag.jpg" alt="Bandera Estados Unidos" class="navbar_desktop__languaje_icon">
+                    </a>
+                </div>
+            </div>
+
+            <div class="navbar_mobile">
+                <span class="navbar_mobile__toggle_menu">
+                    <img src="./assets/icons/menu.svg" alt="Boton de munú" class="navbar_mobile__button" width="30px" height="30px">
+                </span>
+            </div>
+        </nav>
+
+        <button class="header__profile_btn"><img src="../assets/icons/remax_user_icon.svg" alt="Icono de perfil" width="30px" height="30px" class="header__profile_btn__icon"> JOSUÉ MADRIGAL</button>
+    </div>
+</header>
