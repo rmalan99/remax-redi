@@ -157,19 +157,20 @@
                 display: flex;
                 flex-wrap: wrap;
                 border-bottom: 1px solid #CBCBCB;
+                padding-bottom: 50px;
             }
             .profile__details {
-                width: 30%;
                 height: 100%;
             }
             .profile__thumbnail {
                 width: 263px;
                 height: 263px;
                 border-radius: 50%;
-                margin-right: 20px;
+                margin-right: 40px;
                 background-position: center;
                 background-size: cover;
                 background-repeat: no-repeat;
+                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
             }
             .profile__logo_image {
                 max-width: 191px;
@@ -203,81 +204,33 @@
             .score__star_void {
                 color: #D9D9D9;
             }
-            .profile__contact {
-                max-width: 282px;
-                justify-self: flex-end;
-                margin-left: auto;
-                margin-right: 50px;
+            .profile__data {
+                list-style: none;
             }
-            .profile__contacts {
-                padding-left: 20px;
-                margin-bottom: 20px;
+            .profile__data_item {
+                margin-bottom: 15px;
             }
-            .profile__contact__text {
-                font-size: .813rem;
+            .profile__data_title,
+            .profile__data_description {
+                display: block;
+                font-size: 1.063rem;
                 font-weight: 500;
-                color: #0D0D0D;
-                border-top: 1px solid #CBCBCB;
-                border-bottom: 1px solid #CBCBCB;
-                padding: 15px 20px;
-                margin-bottom: 20px;
             }
-            .profile__contact_link {
-                font-size: 1rem;
-                font-weight: 700;
+            .profile__data_description {
                 color: #989898;
-                margin-bottom: 13px;
-                display: block;
             }
-            .profile__options {
-                align-self: flex-end;
-            }
-            .profile__buttons {
-                margin-bottom: 50px;
-            }
-            .profile__btn,
-            .profile__btn:hover,
-            .profile__btn:active,
-            .profile__btn:visited,
-            .profile__contact_link,
-            .profile__contact_link:hover,
-            .profile__contact_link:active,
-            .profile__contact_link:visited {
-                text-decoration: none;
-            }
-            .profile__btn {
-                display: block;
-                width: 240px;
-                height: 44px;
-                color: #fff;
-                font-size: .75rem;
-                font-weight: 500;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                border-radius: 22px;
-                margin: 0 auto 13px;
-            }
-            .profile__btn_green {
-                background-color: #39B44A;
-            }
-            .profile__btn_gray {
-                background-color: #989898;
-            }
+
 
             @media screen and (max-width: 991px) {
                 .profile__details {
                     width: 60%;
                     margin-right: 0;
                 }
-                .profile__contact {
-                    margin-right: 0;
-                }
                 .profile__container {
-                    justify-content: center;
+                    justify-content: space-between;
                 }
                 .profile__thumbnail {
-                    margin-bottom: 50px;
+                    margin-right: 0;
                 }
             }
             @media screen and (max-width: 767px) {
@@ -291,55 +244,52 @@
                     flex-direction: column;
                     align-items: center;
                 }
-                .profile__logo {
-                    width: 158px;
-                    text-align: center;
+                .profile__thumbnail {
+                    margin-bottom: 20px;
                 }
                 .profile__name {
                     text-align: center;
-                    margin-bottom: 5px;
+                    margin-bottom: 30px;
+                    font-size: 1.788rem;
                 }
                 .profile__thumbnail {
                     margin: 0 auto 50px;
                 }
-                .profile__options {
-                    align-self: center;
+                .profile__data {
+                    margin-bottom: 20px;
                 }
-                .profile__contact {
-                    margin-right: auto;
+                .container.profile__container {
+                    padding-bottom: 0;
                 }
             }
         </style>
         <article class="profile">
-            <h1 class="profile__title">PERFIL DE <span class="profile__title_light">AGENTE</span> </h1>
+            <h1 class="profile__title">PERFIL DE <span class="profile__title_light">AGENCIA</span> </h1>
             <section class="profile__profile">
                 <div class="container profile__container">
-                    <div class="profile__thumbnail" style="background-image: url('./assets/images/PERFIL1.jpg');"></div>
+                    <div class="profile__thumbnail" style="background-image: url('./assets/icons/remax_metropolitana.png');"></div>
                     <div class="profile__details">
-                        <h2 class="profile__name">JOSUÉ <span class="profile__name_light">MADRIGAL</span></h2>
-                        <span class="profile__agency">Agente RE/MAX PLUS</span>
+                        <h2 class="profile__name">RE/MAX <span class="profile__name_light">METROPOLITANA</span></h2>
+                        <ul class="profile__data">
+                            <li class="profile__data_item">
+                                <span class="profile__data_title">Brokers</span>
+                                <span class="profile__data_description">Josué Madrigal</span>
+                            </li>
+                            <li class="profile__data_item">
+                                <span class="profile__data_title">Correo</span>
+                                <span class="profile__data_description">josue@remaxrd.com</span>
+                            </li>
+                            <li class="profile__data_item">
+                                <span class="profile__data_title">Dirección</span>
+                                <span class="profile__data_description">Boulevard de Coral, Cormont Plaza V, Local 20, Punta Cana</span>
+                            </li>
+                        </ul>
                         <div class="profile__score">
                             <span class="score__star score__star_full">&#9733;</span>
                             <span class="score__star score__star_full">&#9733;</span>
                             <span class="score__star score__star_full">&#9733;</span>
                             <span class="score__star score__star_full">&#9733;</span>
                             <span class="score__star score__star_void">&#9733;</span>
-                        </div>
-                        <div class="profile__logo">
-                            <img src="./assets/icons/remax_metropolitan.svg" alt="Logo Re/max Metropolitana" class="profile__logo_image">
-                        </div>
-    
-                    </div>
-                    <div class="profile__contact">
-                        <p class="profile__contact__text">¿Estás Interesado(a)? Contáctame</p>
-                        <div class="profile__contacts">
-                            <a href="#" class="profile__contact_link">WhatsApp (829) 230-3288</a>
-                            <a href="#" class="profile__contact_link">Teléfono (829) 230-3288</a>
-                            <a href="#" class="profile__contact_link">Correo josue@remaxm.net</a>
-                        </div>
-                        <div class="profile__buttons">
-                            <a href="#" class="profile__btn profile__btn_green">WHATSAPP (809) 550-9062</a>
-                            <a href="#" class="profile__btn profile__btn_gray">ENVIAR MENSAJE</a>
                         </div>
                     </div>
                 </div>
@@ -510,6 +460,155 @@
 
         </article>
         <!-- ************************** END PROFILE ************************** -->
+
+
+        <!-- ************************** AGENTS SLIDER ************************** -->
+        <style>
+            .properties_slider {
+                padding: 30px 0 50px;
+                text-align: center;
+            }
+            .properties_slider__title {
+                font-size: 1.125rem;
+                font-weight: 700;
+            }
+
+            /* CARD */
+            .agent_card {
+                width: 100%;
+                max-width: 241px;
+                border-radius: 15px;
+                background-color: #fff;
+                overflow: hidden;
+                margin: 0 auto 30px;
+                display: inline-block;
+            }
+            .agent_card__thumbnail {
+                width: 100%;
+                height: 129px;
+            }
+            .agent_card__details {
+                padding: 20px 25px;
+            }
+            .agent_card__name {
+                font-size: 1.063rem;
+                font-weight: 700;
+                text-align: left;
+            }
+            .agent_card__name_light {
+                font-weight: 300;
+            }
+            .agent_card__agency {
+                font-size: 0.625rem;
+                font-weight: 500;
+                color: #989898;
+            }
+            .agent_card__contact {
+                margin: 18px 0 8px;
+            }
+            .agent_card__contact_link {
+                font-size: 0.75rem;
+                font-weight: 500;
+                color: #989898;
+                display: inline-block;
+                margin-bottom: 8px;
+            }
+            .agent_card__social {
+                text-align: center;
+            }
+            .agent_card__contact_link,
+            .agent_card__contact_link:hover,
+            .agent_card__contact_link:active,
+            .agent_card__contact_link:visited,
+            .agent_card__social_link,
+            .agent_card__social_link:hover,
+            .agent_card__social_link:active,
+            .agent_card__social_link:visited {
+                text-decoration: none;
+            }
+        </style>
+        <article class="properties_slider">
+            <div class="container">
+                <h2 class="properties_slider__title">AGENTES</h2>
+
+                <div class="agent_card">
+                    <div class="agent_card__thumbnail" style="background-image: url('./assets/images/PERFIL1.jpg')"></div>
+                    <div class="agent_card__details">
+                        <h3 class="agent_card__name">JOSUÉ <span class="agent_card__name_light">MADRIGAL</span> </h3>
+                        <span class="agent_card__agency">Agente REMAX/PLUS</span>
+                        <div class="agent_card__contact">
+                            <a href="#" class="agent_card__contact_link">WhatsApp (829) 230-3288</a>
+                            <a href="#" class="agent_card__contact_link">Teléfono (829) 230-3288</a>
+                            <a href="#" class="agent_card__contact_link">Correo josue@remaxm.net</a>
+                        </div>
+                        <div class="agent_card__social">
+                            <a href="#" class="agent_card__social_link"><img src="./assets/icons/facebook_icon_gray.svg" alt="Logo Facebook" width="25px" height="25px" class="agent_card__social_icon"></a>
+                            <a href="#" class="agent_card__social_link"><img src="./assets/icons/whatsapp_icon_gray.svg" alt="Logo Whatsapp" width="25px" height="25px" class="agent_card__social_icon"></a>
+                            <a href="#" class="agent_card__social_link"><img src="./assets/icons/whatsapp_icon_gray.svg" alt="Logo Twitter" width="25px" height="25px" class="agent_card__social_icon"></a>
+                            <a href="#" class="agent_card__social_link"><img src="./assets/icons/instagram_icon_gray.svg" alt="Logo Instagram" width="25px" height="25px" class="agent_card__social_icon"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="agent_card">
+                    <div class="agent_card__thumbnail" style="background-image: url('./assets/images/PERFIL1.jpg')"></div>
+                    <div class="agent_card__details">
+                        <h3 class="agent_card__name">JOSUÉ <span class="agent_card__name_light">MADRIGAL</span> </h3>
+                        <span class="agent_card__agency">Agente REMAX/PLUS</span>
+                        <div class="agent_card__contact">
+                            <a href="#" class="agent_card__contact_link">WhatsApp (829) 230-3288</a>
+                            <a href="#" class="agent_card__contact_link">Teléfono (829) 230-3288</a>
+                            <a href="#" class="agent_card__contact_link">Correo josue@remaxm.net</a>
+                        </div>
+                        <div class="agent_card__social">
+                            <a href="#" class="agent_card__social_link"><img src="./assets/icons/facebook_icon_gray.svg" alt="Logo Facebook" width="25px" height="25px" class="agent_card__social_icon"></a>
+                            <a href="#" class="agent_card__social_link"><img src="./assets/icons/whatsapp_icon_gray.svg" alt="Logo Whatsapp" width="25px" height="25px" class="agent_card__social_icon"></a>
+                            <a href="#" class="agent_card__social_link"><img src="./assets/icons/whatsapp_icon_gray.svg" alt="Logo Twitter" width="25px" height="25px" class="agent_card__social_icon"></a>
+                            <a href="#" class="agent_card__social_link"><img src="./assets/icons/instagram_icon_gray.svg" alt="Logo Instagram" width="25px" height="25px" class="agent_card__social_icon"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="agent_card">
+                    <div class="agent_card__thumbnail" style="background-image: url('./assets/images/PERFIL1.jpg')"></div>
+                    <div class="agent_card__details">
+                        <h3 class="agent_card__name">JOSUÉ <span class="agent_card__name_light">MADRIGAL</span> </h3>
+                        <span class="agent_card__agency">Agente REMAX/PLUS</span>
+                        <div class="agent_card__contact">
+                            <a href="#" class="agent_card__contact_link">WhatsApp (829) 230-3288</a>
+                            <a href="#" class="agent_card__contact_link">Teléfono (829) 230-3288</a>
+                            <a href="#" class="agent_card__contact_link">Correo josue@remaxm.net</a>
+                        </div>
+                        <div class="agent_card__social">
+                            <a href="#" class="agent_card__social_link"><img src="./assets/icons/facebook_icon_gray.svg" alt="Logo Facebook" width="25px" height="25px" class="agent_card__social_icon"></a>
+                            <a href="#" class="agent_card__social_link"><img src="./assets/icons/whatsapp_icon_gray.svg" alt="Logo Whatsapp" width="25px" height="25px" class="agent_card__social_icon"></a>
+                            <a href="#" class="agent_card__social_link"><img src="./assets/icons/whatsapp_icon_gray.svg" alt="Logo Twitter" width="25px" height="25px" class="agent_card__social_icon"></a>
+                            <a href="#" class="agent_card__social_link"><img src="./assets/icons/instagram_icon_gray.svg" alt="Logo Instagram" width="25px" height="25px" class="agent_card__social_icon"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="agent_card">
+                    <div class="agent_card__thumbnail" style="background-image: url('./assets/images/PERFIL1.jpg')"></div>
+                    <div class="agent_card__details">
+                        <h3 class="agent_card__name">JOSUÉ <span class="agent_card__name_light">MADRIGAL</span> </h3>
+                        <span class="agent_card__agency">Agente REMAX/PLUS</span>
+                        <div class="agent_card__contact">
+                            <a href="#" class="agent_card__contact_link">WhatsApp (829) 230-3288</a>
+                            <a href="#" class="agent_card__contact_link">Teléfono (829) 230-3288</a>
+                            <a href="#" class="agent_card__contact_link">Correo josue@remaxm.net</a>
+                        </div>
+                        <div class="agent_card__social">
+                            <a href="#" class="agent_card__social_link"><img src="./assets/icons/facebook_icon_gray.svg" alt="Logo Facebook" width="25px" height="25px" class="agent_card__social_icon"></a>
+                            <a href="#" class="agent_card__social_link"><img src="./assets/icons/whatsapp_icon_gray.svg" alt="Logo Whatsapp" width="25px" height="25px" class="agent_card__social_icon"></a>
+                            <a href="#" class="agent_card__social_link"><img src="./assets/icons/whatsapp_icon_gray.svg" alt="Logo Twitter" width="25px" height="25px" class="agent_card__social_icon"></a>
+                            <a href="#" class="agent_card__social_link"><img src="./assets/icons/instagram_icon_gray.svg" alt="Logo Instagram" width="25px" height="25px" class="agent_card__social_icon"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- ************************** END AGENTS SLIDER ************************** -->
 
 
         <!-- ************************** FAVORITES ************************** -->
