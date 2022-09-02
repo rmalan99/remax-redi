@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>REMAX RD</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/styles/main.css">
+        <link rel="stylesheet" href="./assets/styles/proyecttos_exclusivos.css">
+    </head>
+    <body>
+        <!-- ************************** HEADER ************************** -->
+        <style>
+            .header {
+                width: 100%;
+                background-color: #fff;
+                padding: 10px 0;
+                position: sticky;
+                top: 0;
+                z-index: 1000;
+                box-shadow: 1px 0px 3px 0px #0003;
+            }
+            .header__container {
+                display: flex;
+                justify-content: space-between;
+                position: relative;
+            }
+            .navbar {
+                display: flex;
+                align-items: center;
+            }
+            .navbar_desktop {
+                display: none;
+            }
+            .navbar_desktop__list_items {
+                list-style: none;
+            }
+            .navbar_desktop__item {
+                display: inline-block;
+                margin-right: 30px;
+                font-weight: 700;
+            }
+            .header__logo {
+                background-color: #1F3564;
+                position: relative;
+                top: -10px;
+                height: 55px;
+                width: 251px;
+            }
+            .header__logo_link {
+                position: absolute;
+                background-color: #1f3564;
+                width: 100%;
+                height: 133px;
+                border-radius: 0px 0px 45px 45px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .header__logo_image {
+                width: 65%;
+                margin-top: -10px;
+            }
+            .header__logo_link,
+            .header__logo_link:hover,
+            .header__logo_link:active,
+            .header__logo_link:visited,
+            .navbar_desktop__item_link,
+            .navbar_desktop__item_link:hover,
+            .navbar_desktop__item_link:active,
+            .navbar_desktop__item_link:visited {
+                text-decoration: none;
+                color: inherit;
+            }
+            .navbar_desktop__item_link {
+                font-weight: 700;
+            }
+            .navbar_desktop__languaje {
+                border-left: 1px solid #000;
+                border-right: 1px solid #000;
+                padding: 0 15px;
+                font-weight: 700;
+            }
+            .navbar_desktop__languaje_link {
+                display: inline-block;
+                margin-left: 15px;
+            }
+            .navbar_desktop__languaje_icon {
+                width: 30px;
+                vertical-align: middle;
+            }
+            .navbar_mobile {
+                margin: 0 10px;
+            }
+            .navbar_mobile__toggle_menu {
+                cursor: pointer;
+            }
+            button.header__register_btn {
+                position: absolute;
+                right: 10%;
+                top: calc(100% + 10px);
+                background-color: #E92027;
+                color: #fff;
+                border: none;
+                outline: none;
+                padding: 10px 30px;
+                border-radius: 0 0 10px 10px;
+                font-weight: 700;
+                cursor: pointer;
+            }
+            @media screen and (min-width: 992px) {
+                .navbar_desktop {
+                    display: flex;
+                }
+                .navbar_mobile {
+                    display: none;
+                }
+            }
+            @media screen and (max-width: 991px) {
+                button.header__register_btn {
+                    display: none;
+                }
+            }
+        </style>
+        <header class="header">
+            <div class="container header__container">
+                <div class="header__logo">
+                    <a href="#" class="header__logo_link">
+                        <img src="./assets/icons/logo_remax_collection.png" alt="Logo Remax Coleecion" class="header__logo_image" width="150px" />
+                    </a>
+                </div>
+        
+                <nav class="navbar">
+                    <div class="navbar_desktop">
+                        <ul class="navbar_desktop__list_items">
+                            <li class="navbar_desktop__item"><a href="#" class="navbar_desktop__item_link">Volver a RE/MAX RD</a></li>
+                            <li class="navbar_desktop__item"><a href="#" class="navbar_desktop__item_link">Propiedades</a></li>
+                        </ul>
+                        <div class="navbar_desktop__languaje">
+                            IDIOMA
+                            <a href="#" class="navbar_desktop__languaje_link">
+                                <img src="./assets/icons/dominican-republic-flag.jpg" alt="Bandera República Dominicana" class="navbar_desktop__languaje_icon">
+                            </a>
+                            <a href="#" class="navbar_desktop__languaje_link">
+                                <img src="./assets/icons/united-states-flag.jpg" alt="Bandera Estados Unidos" class="navbar_desktop__languaje_icon">
+                            </a>
+                        </div>
+                    </div>
+        
+                    <div class="navbar_mobile">
+                        <span class="navbar_mobile__toggle_menu">
+                            <img src="./assets/icons/menu.svg" alt="Boton de munú" class="navbar_mobile__button" width="30px" height="30px">
+                        </span>
+                    </div>
+                </nav>
+
+                <button class="header__register_btn">Regístrate</button>
+            </div>
+        </header>
+        <!-- ************************** END HEADER ************************** -->
+
+
+        <!-- ************************** COVER ************************** -->
+        <style>
+            .cover {
+                width: 100%;
+                height: 868px;
+                background-position: center !important;
+                background-size: cover !important;
+                background-repeat: no-repeat !important;
+                padding: 110px 0;
+                margin-bottom: -1px;
+            }
+            .cover__title,
+            .cover__title_strong {
+                font-weight: 700;
+                color: #fff;
+                text-align: center;
+            }
+            .cover__title {
+                font-size: 2.313rem;
+            }
+            .cover__title_strong {
+                font-size: 3rem;
+                display: block;
+                margin-top: 5px;
+            }
+
+            /* SEARCH */
+            .cover__search {
+                position: relative;
+                width: 100%;
+                max-width: 744px;
+                margin: 110px auto;
+            }
+            .cover__search_body {
+                background-color: #F7F6F4;
+                position: relative;
+                z-index: 10;
+                padding: 15px 80px 15px 40px;
+                border-radius: 50px;
+                display: flex;
+            }
+            .cover__search_body__label {
+                font-size: .8rem;
+                font-weight: 700;
+                cursor: pointer;
+            }
+            .cover__search_body__label:nth-of-type(1) {
+                width: 45%;
+                border-right: 1px solid #1f3564;
+                margin-right: 30px;
+            }
+            .cover__search_body__label:nth-of-type(2) {
+                width: 50%;
+            }
+            .cover__input_text,
+            .cover__input_text:focus {
+                display: inline-block;
+                width: 100%;
+                border: none;
+                outline: none;
+                margin-top: 5px;
+                background-color: #F7F6F4;
+            }
+            .cover__button_submit {
+                background-color: #1f3564;
+                border: none;
+                outline: none;
+                padding: 10px 20px;
+                border-radius: 15px;
+                position: absolute;
+                right: -10px;
+                align-self: center;
+                cursor: pointer;
+            }
+            .cover__button_filter {
+                position: absolute;
+                top: 100%;
+                right: 80px;
+                background-color: #e92027;
+                color: #fff;
+                padding: 8px 20px;
+                border: none;
+                outline: none;
+                border-radius: 0 0 10px 10px;
+                font-size: .7rem;
+                cursor: pointer;
+            }
+            .cover__button_filter__icon,
+            .cover__button_submit__icon {
+                vertical-align: middle;
+            }
+            @media screen and (max-width: 767px) {
+                .cover__search_body {
+                flex-wrap: wrap;
+                padding: 15px 30px;
+                height: auto;
+                }
+                .cover__search_body__label:nth-of-type(1) {
+                border-right: none;
+                width: 100%;
+                margin: 0;
+                }
+                .cover__search_body__label:nth-of-type(2) {
+                display: none;
+                }
+            
+                .cover__button_submit__icon {
+                width: 20px;
+                }
+                .cover__button_submit {
+                padding: 5px 15px;
+                }
+                .cover__button_filter {
+                right: 25px;
+                font-size: .6rem
+                }
+            }
+
+            /* ARROW BOTTOM */
+            .arrow_bottom {
+                text-align: center;
+            }
+        </style>
+        <article class="cover" style="background: linear-gradient(#0000 0%, #0000 40%, #000), url('./assets/images/remax_background_collection.png')">
+            <div class="container">
+                <h1 class="cover__title">BIENVENIDOS A <span class="cover__title_strong">RE/MAX COLLECTION</span></h1>
+
+                <form action="" method="get" class="cover__search" id="cover_search">
+                    <div class="cover__search_body">
+                        <label for="search_type" class="cover__search_body__label">
+                            ¿Que buscas?
+                            <input type="text" name="" placeholder="Apartamento, casa, terreno..." class="cover__input_text" id="search_type">
+                        </label>
+
+                        <label for="search_place" class="cover__search_body__label">
+                            ¿Donde?
+                            <input type="text" name="" placeholder="Buscar por código, ciudad, sector, dirección..." class="cover__input_text" id="search_place">
+                        </label>
+
+                        <button type="submit" class="cover__button_submit" form="cover_search"><img src="./assets/icons/loupe_remax_rd.svg" alt="Loupe icon" class="cover__button_submit__icon" width="35px" height="35px"/></button>
+                    </div>
+
+                    <button class="cover__button_filter"><img src="./assets/icons/filter_remax_rd.svg" alt="Filter icon" class="cover__button_filter__icon" width="11px" height="11px"/> FILTROS AVANZADOS</button>
+                </form>
+
+                <div class="arrow_bottom">
+                    <a href="#" class="arrow_bottom">
+                        <img src="./assets/icons/arrow_bottom.svg" alt="Flecha hacia abajo" width="67px" height="67px" class="arrow_bottom__image">
+                    </a>
+                </div>
+            </div>
+        </article>
+        <!-- ************************** END COVER ************************** -->
+
+
+
+        <!-- ************************** COLLECTION ************************** -->
+        <article class="collection">
+            <div class="container">
+
+                <!-- DESCRIPTION -->
+                <style>
+                    .collection {
+                        background-color: #000;
+                        padding: 150px 0 350px;
+                        margin-bottom: -200px;
+                    }
+                    .collection__details {
+                    }
+                    .collection__details_container {
+                        max-width: 1004px;
+                        margin: 0 auto 300px;
+                        position: relative;
+
+                    }
+                    .collection__details__title {
+                        font-size: 2.75rem;
+                        font-weight: 700;
+                        color: #fff;
+                        text-align: center;
+                        margin-bottom: 116px;
+                    }
+                    .collection__description {
+                        width: 557px;
+                        height: 337px;
+                        background-color: #8C8C8C;
+                        border-radius: 26px;
+                        padding: 41px 145px 41px 48px;
+                        position: relative;
+                    }
+                    .collection__description_text {
+                        font-size: 0.875rem;
+                        font-weight: 500;
+                        color: #fff;
+                        line-height: 20px;
+                        margin-bottom: 20px;
+                    }
+                    .collection__description_video {
+                        width: 578px;
+                        height: 442px;
+                        border-radius: 50px;
+                        position: absolute;
+                        top: 41px;
+                        right: 0;
+                        background-color: #1F3564;
+                    }
+                    @media screen and (max-width: 1299px) {
+                        .collection__description {
+                            width: 522px;
+                            height: 302px;
+                        }
+                        .collection__description_video {
+                            width: 543px;
+                            height: 407px;
+                        }
+                    }
+                    @media screen and (max-width: 991px) {
+                        .collection__description {
+                            margin: 0 auto;
+                        }
+                        .collection__description_video {
+                            top: 80%;
+                        }
+                        .collection__details_container {
+                            margin: 0 auto 480px;
+                        }
+                    }
+                    @media screen and (max-width: 767px) {
+                        .collection__details_container {
+                            margin-bottom: 150px;
+                        }
+                        .collection__description_video {
+                            position: static;
+                            margin-top: 30px;
+                            width: 100%;
+                            height: 60vw;
+                        }
+                        .collection__description {
+                            padding: 41px 48px;
+                            min-height: 302px;
+                            height: auto;
+                            width: 100%;
+                        }
+                        .collection__details__title {
+                            font-size: 2.35rem;
+                        }
+                    }
+                </style>
+
+                <section class="collection__details">
+                    <h2 class="collection__details__title">The RE/MAX Collection</h2>
+                    <div class="collection__details_container">
+                        <div class="collection__description">
+                            <p class="collection__description_text">El equipo de RE/MAX COLLECTION está altamente capacitado para superar las expectativas del mercado Premium de propiedades y poder ayudarte en la comercialización de inmuebles exclusivos.</p>
+                            <p class="collection__description_text">Nuestro equipo podrá asesorarte tanto en la venta como en la compra de tu próximo inmueble de lujo.</p>
+                        </div>
+                        <div class="collection__description_video"></div>
+                    </div>
+                </section>
+
+
+                <!-- SLIDER COLLECTION -->
+                <style>
+                    .properties_slider {
+                        margin-bottom: 150px;
+                    }
+                    .collection__slider {
+                        text-align: center;
+                        margin-bottom: 80px;
+                    }
+                    .properties_slider__title {
+                        color: #fff;
+                        font-size: 1.375rem;
+                        font-weight: 700;
+                        margin-bottom: 100px;
+                    }
+                    .properties_slider__title_light {
+                        color: #fff;
+                        font-weight: 300;
+                    }
+
+                    /* CARD */
+                    .collection__card {
+                        width: 100%;
+                        max-width: 250px;
+                        position: relative;
+                        display: inline-block;
+                        margin: 0 10px;
+                    }
+                    .collection__card_link,
+                    .collection__card_link:hover,
+                    .collection__card_link:active,
+                    .collection__card_link:visited {
+                        text-decoration: none;
+                    }
+                    .collection__thumbnail {
+                        width: 100%;
+                        border-radius: 20px;
+                        overflow: hidden;
+                        height: 150px;
+                        position: relative;
+                        z-index: 10;
+                    }
+                    .collection__card_label {
+                        position: absolute;
+                        bottom: 98%;
+                        left: 10px;
+                        background-color: #1f3564;
+                        color: #fff;
+                        padding: 5px 10px;
+                        border-radius: 10px 10px 0 0;
+                        letter-spacing: 1px;
+                        font-size: .9rem;
+                        font-weight: 700;
+                    }
+                    .collection__thumbnail_image {
+                        width: 100%;
+                    }
+                    /* MODIFICACION */
+                    /* .collection__card__description {
+                        text-align: center;
+                        display: inline-block;
+                        width: 100%;
+                        margin: 20px 0;
+                    } */
+                    .collection__card__description {
+                        text-align: center;
+                        display: inline-block;
+                        width: 100%;
+                        margin: 20px 0;
+                        color: #fff;
+                    }
+                    .collection__card__description_light {
+                        color: #fff;
+                        font-weight: 300;
+                    }
+                    .colletion__footer {
+                        text-align: center;
+                    }
+                    .collection__button {
+                        border: none;
+                        outline: none;
+                        background-color: #e92027;
+                        color: #fff;
+                        font-weight: 700;
+                        font-size: 1rem;
+                        border-radius: 50px;
+                        padding: 10px 20px;
+                        text-align: center;
+                        cursor: pointer;
+                    }
+
+                    /* BOTON VER MÁS */
+                    .collection__slide__button {
+                        text-align: center;
+                    }
+                    .collection__slide__button_link {
+                        font-size: 0.938rem;
+                        font-weight: 700;
+                        color: #fff;
+                        background-color: #E92027;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 100%;
+                        max-width: 320px;
+                        height: 40px;
+                        border-radius: 50px;
+                        margin: 0 auto;
+                    }
+                    .collection__slide__button_link,
+                    .collection__slide__button_link:hover,
+                    .collection__slide__button_link:active,
+                    .collection__slide__button_link:visited {
+                        text-decoration: none;
+                    }
+                </style>
+                <section class="properties_slider">
+                    <div class="container">
+                        <h2 class="properties_slider__title">PROPIEDADES <span class="properties_slider__title_light">COLLECTION</span></h2>
+                        <section class="collection__slider">
+                            <div class="collection__card">
+                                <a href="#" class="collection__card_link">
+                                    <span class="collection__card_label">COLLECTION</span>
+                                    <div class="collection__thumbnail">
+                                        <img src="./assets/images/propiedad1.jpg" alt="Collection Image" class="collection__thumbnail_image">
+                                    </div>
+                                    <span class="collection__card__description">Townhouse <span class="collection__card__description_light">Punta Cana</span></span>
+                                </a>
+                            </div>
+                           
+                            <div class="collection__card">
+                                <a href="#" class="collection__card_link">
+                                    <span class="collection__card_label">COLLECTION</span>
+                                    <div class="collection__thumbnail">
+                                        <img src="./assets/images/propiedad1.jpg" alt="Collection Image" class="collection__thumbnail_image">
+                                    </div>
+                                    <span class="collection__card__description">Townhouse <span class="collection__card__description_light">Punta Cana</span></span>
+                                </a>
+                            </div>
+                
+                            <div class="collection__card">
+                                <a href="#" class="collection__card_link">
+                                    <span class="collection__card_label">COLLECTION</span>
+                                    <div class="collection__thumbnail">
+                                        <img src="./assets/images/propiedad1.jpg" alt="Collection Image" class="collection__thumbnail_image">
+                                    </div>
+                                    <span class="collection__card__description">Townhouse <span class="collection__card__description_light">Punta Cana</span></span>
+                                </a>
+                            </div>
+                
+                            <div class="collection__card">
+                                <a href="#" class="collection__card_link">
+                                    <span class="collection__card_label">COLLECTION</span>
+                                    <div class="collection__thumbnail">
+                                        <img src="./assets/images/propiedad1.jpg" alt="Collection Image" class="collection__thumbnail_image">
+                                    </div>
+                                    <span class="collection__card__description">Townhouse <span class="collection__card__description_light">Punta Cana</span></span>
+                                </a>
+                            </div>
+        
+                        </section>
+
+                        <div class="collection__slide__button">
+                            <a href="#" class="collection__slide__button_link">VER MÁS PROPIEDADES COLLECTION</a>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- SLIDER AGENTES -->
+                <style>
+                    .agents {
+                        text-align: center;
+                    }
+                    .agents__title {
+                        font-size: 1.375rem;
+                        font-weight: 700;
+                        color: #fff;
+                    }
+                    .agents__title_light {
+                        font-weight: 300;
+                        color: #fff;
+                    }
+
+                    /* CARD */
+                    .agent_card {
+                        width: 100%;
+                        max-width: 190px;
+                        height: auto;
+                        min-height: 209px;
+                        background-color: #fff;
+                        border-radius: 13px;
+                        position: relative;
+                        padding-top: 12px;
+                        display: inline-block;
+                        margin-bottom: 30px;
+                    }
+                    .agent_card__thumbnail {
+                        width: 110px;
+                        height: 110px;
+                        margin: 0 auto 10px;
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        border-radius: 50%;
+                    }
+                    .agent_card__name {
+                        font-size: 0.781rem;
+                        font-weight: 700;
+                        margin-bottom: 5px;
+                        text-align: center;
+                    }
+                    .agent_card__agency {
+                        font-size: 0.538rem;
+                        font-weight: 700;
+                        color: #989898;
+                        text-align: center;
+                    }
+                    .agent_card__btn {
+                        font-size: 0.688rem;
+                        font-weight: 700;
+                        color: #fff;
+                        width: 136px;
+                        height: 28px;
+                        background-color: #E92027;
+                        border-radius: 28px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: absolute;
+                        bottom: -14px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                    .agent_card__btn,
+                    .agent_card__btn:hover,
+                    .agent_card__btn:active,
+                    .agent_card__btn:visited {
+                        text-decoration: none;
+                    }
+
+                </style>
+                <section class="agents">
+                    <h2 class="agents__title">AGENTES CERTIFICADOS <span class="agents__title_light">COLLECTION</span></h2>
+
+                    <div class="agent_card">
+                        <div class="agent_card__thumbnail" style="background-image: url('./assets/images/PERFIL1.jpg');"></div>
+                        <h3 class="agent_card__name">JOSUÉ MADRIGAL</h3>
+                        <p class="agent_card__agency">Agente REMAX/PLUS</p>
+                        <a href="#" class="agent_card__btn">REGISTRATE</a>
+                    </div>
+
+                    <div class="agent_card">
+                        <div class="agent_card__thumbnail" style="background-image: url('./assets/images/PERFIL1.jpg');"></div>
+                        <h3 class="agent_card__name">JOSUÉ MADRIGAL</h3>
+                        <p class="agent_card__agency">Agente REMAX/PLUS</p>
+                        <a href="#" class="agent_card__btn">REGISTRATE</a>
+                    </div>
+
+                    <div class="agent_card">
+                        <div class="agent_card__thumbnail" style="background-image: url('./assets/images/PERFIL1.jpg');"></div>
+                        <h3 class="agent_card__name">JOSUÉ MADRIGAL</h3>
+                        <p class="agent_card__agency">Agente REMAX/PLUS</p>
+                        <a href="#" class="agent_card__btn">REGISTRATE</a>
+                    </div>
+
+                    <div class="agent_card">
+                        <div class="agent_card__thumbnail" style="background-image: url('./assets/images/PERFIL1.jpg');"></div>
+                        <h3 class="agent_card__name">JOSUÉ MADRIGAL</h3>
+                        <p class="agent_card__agency">Agente REMAX/PLUS</p>
+                        <a href="#" class="agent_card__btn">REGISTRATE</a>
+                    </div>
+                </section>
+
+            </div>
+        </article>
+        <!-- ************************** END COLLECTION ************************** -->
+
+
+        
+        <!-- ************************** FOOTER ************************** -->
+        <style>
+            .footer {
+                /* background-color: #fff; */
+            }
+            .footer__container {
+                background-color: #1f3564;
+                border-radius: 0 200px 0 0;
+                padding: 50px 0;
+            }
+            .footer__row {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            .footer__col_right,
+            .footer__col_left {
+                width: 50%;
+                max-width: 550px;
+            }
+            .footer__col_left {
+                display: flex;
+            }
+            .footer__col_left_logo {
+                width: 20%;
+                display: flex;
+                align-items: center;
+            }
+            .footer__col_left_logo_image {
+                width: 100%;
+                max-width: 130px;
+            }
+            .footer__col_left_description {
+                width: 80%;
+                padding: 10px;
+            }
+            .footer__button:hover,
+            .footer__button:active,
+            .footer__button:visited,
+            .footer__button {
+                display: inline-block;
+                padding: 5px 20px;
+                color: #fff;
+                text-decoration: none;
+                border-radius: 50px;
+                margin-right: 10px;
+                font-weight: 700;
+            }
+            .footer__button__azul {
+                background-color: #0071ba;
+            }
+            .footer__button__azul_claro {
+                background-color: #29a9e0;
+            }
+            .footer__button__rojo {
+                background-color: #e92027;
+                margin-bottom: 20px;
+            }
+            .footer__text {
+                color: #fff;
+                margin: 20px 0;
+                font-size: .8rem;
+            }
+            .footer__social_link:hover,
+            .footer__social_link:active,
+            .footer__social_link:visited,
+            .footer__social_link {
+                display: inline-block;
+                border: 2px solid #fff;
+                border-radius: 50%;
+                padding: 8px;
+                text-align: center;
+            }
+            .footer__social_icon {
+                width: 20px;
+                height: 20px;
+                vertical-align: middle;
+            }
+            .footer__col_right {
+                padding: 10px 0 0 30px;
+            }
+            .footer__form {
+                margin-top: 80px;
+            }
+            .footer__input_mail {
+                background: none;
+                outline: none;
+                border: 1px solid #fff;
+                border-radius: 50px;
+                padding: 8px 20px;
+                color: #fff;
+                font-size: .9rem;
+                margin: 0 20px 10px 0;
+                max-width: 270px;
+                width: 100%;
+            }
+            .footer__input_submit {
+                background-color: #fff;
+                color: #1b2e57;
+                border: none;
+                outline: none;
+                padding: 9px 20px;
+                border-radius: 50px;
+                font-weight: 500;
+                cursor: pointer;
+            }
+            .footer__nav {
+                margin-top: 80px;
+            }
+            .footer__list {
+                text-align: center;
+            }
+            .footer__list_item {
+                display: inline-block;
+                margin: 0 5px;
+                padding: 5px 0;
+                margin-bottom: 5px;
+            }
+            .footer__list_item__link:hover,
+            .footer__list_item__link:active,
+            .footer__list_item__link:visited,
+            .footer__list_item__link {
+                color: #fff;
+                font-weight: 500;
+                text-decoration: none;
+                font-size: .9rem;
+            }
+            .footer__right {
+                text-align: center;
+                padding: 30px 0;
+            }
+            .footer__logo {
+                margin-bottom: 10px;
+            }
+            @media screen and (max-width: 1300px) {
+                .footer__button:hover, 
+                .footer__button:active, 
+                .footer__button:visited, 
+                .footer__button {
+                    padding: 5px 17px;
+                    margin-right: 5px;
+                    margin-bottom: 10px;
+                }
+            }
+            @media screen and (max-width: 767px) {
+                .footer__container {
+                    border-radius: 0;
+                }
+                .footer__col_right, 
+                .footer__col_left {
+                    width: 100%;
+                    margin-bottom: 30px;
+                }
+                .footer__col_left_description .footer__text.mt-80 {
+                    margin-top: 30px !important;
+                }
+                .footer__col_left {
+                    flex-wrap: wrap;
+                }
+                .footer__col_left_logo {
+                    text-align: center;
+                    margin-bottom: 30px;
+                }
+                .footer__col_left_logo_image {
+                    margin: 0 auto;
+                }
+                .footer__col_left_logo,
+                .footer__col_left_description {
+                    width: 100%;
+                }
+                .footer__col_right {
+                    margin-top: 50px;
+                    padding-left: 0;
+                }
+                .footer__col_right,
+                .footer__col_left_description {
+                    text-align: center;
+                }
+                .footer__button.footer__button__azul,
+                .footer__button.footer__button__rojo {
+                    display: inline-block;
+                    margin: 0 auto 10px;
+                }
+                .footer__form {
+                    margin-top: 10px;
+                }
+            }
+        </style>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="container">
+                    <section class="footer__row">
+                        <div class="footer__col_left">
+                            <div class="footer__col_left_logo">
+                                <img src="./assets/icons/remax-balloon.png" alt="Logo Remax" class="footer__col_left_logo_image">
+                            </div>
+                            <div class="footer__col_left_description">
+                                <a href="#" class="footer__button footer__button__azul">Abre tu Franquicia</a>
+                                <a href="#" class="footer__button footer__button__azul_claro">Unete a RE/MAX</a>
+                                <p class="footer__text mt-80">RE/MAX es una empresa multinacional, que permite Capacitar, Educar y relacionar a los Asesores y gestores de negocios con el mercado inmobiliario del Mundo, a través de su conocimiento y relaciones nacionales y extranjeras. Desde la primer oficina que abrió sus puertas en 1973 en Denver, Colorado, RE/MAX se ha convertido en una red global de bienes raíces de oficinas de propiedad de franquiciados que funciona con cerca de 90.000 asociados de ventas.</p>
+                                <a href="https://www.facebook.com/remaxrd" target="_blank" class="footer__social_link"><img src="./assets/icons/facebook.png" alt="Facebook" class="footer__social_icon"></a>
+                                <a href="#" target="_blank" class="footer__social_link"><img src="./assets/icons/whatsapp.png" alt="Whatsapp" class="footer__social_icon"></a>
+                                <a href="https://twitter.com/Remax_RD" target="_blank" width="20px" height="20px" class="footer__social_link"><img src="./assets/icons/twitter.png" alt="Twitter" class="footer__social_icon"></a>
+                                <a href="https://instagram.com/remax_rd?igshid=YmMyMTA2M2Y=" target="_blank" class="footer__social_link"><img src="./assets/icons/instagram-symbol.png" alt="Instagram" class="footer__social_icon"></a>
+                            </div>
+                        </div>
+
+                        <div class="footer__col_right">
+                            <a href="#" class="footer__button footer__button__rojo">REGISTRATE</a>
+                            <p class="footer__text">Mejora tu experiencia de búsqueda. Regístrate para que puedas guardar las propiedades de tu interés y recibir actualizaciones de las mismas.</p>
+
+                            <form action="" class="footer__form" method="post">
+                                <p class="footer__text">Suscribete y recibe las actualizaciones de nuevas propieades</p>
+                                <input type="email" name="email" id="" class="footer__input_mail" placeholder="Email"/>
+                                <input type="submit" class="footer__input_submit" value="SUSCRIBIR">
+                            </form>
+                        </div>
+                    </section>
+
+                    <nav class="footer__nav">
+                        <ul class="footer__list">
+                            <li class="footer__list_item"><a href="#" class="footer__list_item__link">Propiedades</a></li>
+                            <li class="footer__list_item"><a href="#" class="footer__list_item__link">Agentes</a></li>
+                            <li class="footer__list_item"><a href="#" class="footer__list_item__link">Franquicias</a></li>
+                            <li class="footer__list_item"><a href="#" class="footer__list_item__link">Servicios</a></li>
+                            <li class="footer__list_item"><a href="#" class="footer__list_item__link">Blog</a></li>
+                            <li class="footer__list_item"><a href="#" class="footer__list_item__link">Alquilar</a></li>
+                            <li class="footer__list_item"><a href="#" class="footer__list_item__link">Collection</a></li>
+                            <li class="footer__list_item"><a href="#" class="footer__list_item__link">Contáctanos</a></li>
+                            <li class="footer__list_item"><a href="#" class="footer__list_item__link">Comprar</a></li>
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
+            <div class="container">
+                <section class="footer__right">
+                    <img src="./assets/icons/REMAX-logo.svg" alt="Logo Remax" class="footer__logo" width="200px">
+                    <p class="footer__right_texy">Copyright © Todos los derechos reservados 2022, REMAX RD</p>
+                </section>
+            </div>
+        </footer>
+        <!-- ************************** END FOOTER ************************** -->
+    </body>
+</html>
