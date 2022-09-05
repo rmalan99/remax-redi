@@ -350,24 +350,29 @@
 
 
 /* END NORMALIZE */
+
 /* @font-face {
     font-family: 'Gotham';
-    src: url("../fonts/GothamBold.ttf") format('truetype');
+    src: url('../fonts/gothambold-webfont.woff2') format('woff2'),
+         url('../fonts/gothambold-webfont.woff') format('woff');
     font-weight: 700;
 }
 @font-face {
     font-family: 'Gotham';
-    src: url("../fonts/GothamBook.ttf") format('truetype');
+    src: url('../fonts/gothambook-webfont.woff2') format('woff2'),
+         url('../fonts/gothambook-webfont.woff') format('woff');
     font-weight: 400;
 }
 @font-face {
     font-family: 'Gotham';
-    src: url("../fonts/GothamLight.ttf") format('truetype');
+    src: url('../fonts/gothamlight-webfont.woff2') format('woff2'),
+         url('../fonts/gothamlight-webfont.woff') format('woff');
     font-weight: 300;
 }
 @font-face {
     font-family: 'Gotham';
-    src: url("../fonts/GothamMedium.ttf") format('truetype');
+    src: url('../fonts/gothammedium-webfont.woff2') format('woff2'),
+         url('../fonts/gothammedium-webfont.woff') format('woff');
     font-weight: 500;
 } */
 
@@ -381,7 +386,7 @@
     padding: 0;
     box-sizing: border-box;
     color: var(--color-primary);
-    font-family: 'Inter', sans-serif;;
+    font-family: 'Gotham';
     font-weight: 400;
 }
 body {
