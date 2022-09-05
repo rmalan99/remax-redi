@@ -203,6 +203,25 @@
                 .cover__button_btn:visited {
                     text-decoration: none;
                 }
+
+                @media screen and (max-width: 991px) {
+                    .cover__background {
+                        height: 65vw;
+                    }
+                    .cover__details {
+                        position: static;
+                        background-color: #1F3565;
+                    }
+                    .cover__content {
+                        position: static;
+                        width: 100%;
+                    }
+                }
+                @media screen and (max-width: 767px) {
+                    .cover__content {
+                        padding: 80px 20px;
+                    }
+                }
             </style>
             <article class="cover">
                 <section class="cover__background" style="background-image: url('./assets/images/happy-couple-with-keys-of-new-apartment.jpg');"></section>
@@ -222,6 +241,347 @@
 
         <!-- ************************** END COVER ************************** -->
 
+
+
+        <!-- ************************** STATISTICS ************************** -->
+        <style>
+            .statistics {
+                padding: 110px 0 0;
+                margin-bottom: -5px;
+            }
+            .statistics__container {
+                display: flex;
+                justify-content: space-between;
+            }
+            .statistics__title {
+                font-size: 3.313rem;
+                font-weight: 500;
+                text-align: left;
+                max-width: 505px;
+                margin-left: 77px;
+                text-transform: none;
+                margin-bottom: 26px;
+            }
+            .statistics__title_red {
+                font-size: 2.188rem;
+                font-weight: 700;
+                color: #E92027;
+                display: block;
+                margin-left: 19%;
+            }
+            .statistics__title_light {
+                font-size: 1.938rem;
+                font-weight: 300;
+                display: block;
+                margin-left: 36%;
+            }
+            .statistics__btn {
+                display: flex;
+                max-width: 265px;
+                height: 40px;
+                background-color: #E92027;
+                border-radius: 50px;
+                color: #fff;
+                justify-content: center;
+                align-items: center;
+                font-size: 0.938rem;
+                font-weight: 700;
+                margin-left: 20%;
+            }
+            .statistics__btn,
+            .statistics__btn:hover,
+            .statistics__btn:active,
+            .statistics__btn:visited {
+                text-decoration: none;
+            }
+
+            .statistics__text,
+            .statistics__title,
+            .statistics__subtitle {
+                margin-left: 6%;
+            }
+            .statistics__subtitle {
+                margin-top: 94px;
+                font-size: 1.438rem;
+                font-weight: 700;
+                margin-bottom: 17px;
+            }
+            .statistics__text {
+                font-size: 0.938rem;
+                font-weight: 500;
+                color: #99999B;
+                margin-bottom: 21px;
+                max-width: 625px;
+            }
+            .statistics__data {
+                margin-top: 65px;
+                display: flex;
+                justify-content: space-between;
+                max-width: 750px;
+            }
+            .statistics__data_item {
+                max-width: 113px;
+            }
+            .statistics__data__title {
+                font-size: 1.688rem;
+                font-weight: 700;
+                color: #5E5E5E;
+                margin-bottom: 4px;
+                display: block;
+            }
+            .statistics__data__description {
+                font-size: 0.875rem;
+                font-weight: 700;
+                color: #68686A;
+                display: block;
+            }
+
+            .statistics__background {
+                max-width: 534px;
+                align-self: flex-end;
+            }
+            .statistics__content {
+                width: calc(100% - 534px);
+            }
+            .statistics__background_image {
+                width: 100%;
+            }
+
+            @media screen and (max-width: 1299px) {
+                .statistics {
+                    overflow: hidden;
+                }
+                .statistics__container {
+                    position: relative;
+                    padding-bottom: 140px;
+                }
+                .statistics__content {
+                    width: calc(100% - 234px);
+                }
+                .statistics__background {
+                    position: absolute;
+                    right: -25%;
+                    bottom: 0;
+                }
+            }
+            @media screen and (max-width: 991px) {
+                .statistics__background {
+                    display: none;
+                }
+                .statistics__content {
+                    width: 100%;
+                }
+            }
+            @media screen and (max-width: 767px) {
+                .statistics__data {
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+                .statistics__data_item {
+                    margin: 15px;
+                }
+                .statistics__text, 
+                .statistics__title, 
+                .statistics__subtitle {
+                    margin-left: 0;
+                }
+                .statistics__title {
+                    font-size: 2.313rem;
+                    text-align: center;
+                }
+                .statistics__title_red {
+                    font-size: 1.688rem;
+                    text-align: center;
+                    margin-left: 0;
+                }
+                .statistics__title_light {
+                    font-size: 1.438rem;
+                    text-align: center;
+                    margin-left: 0;
+                }
+                .statistics__btn {
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+        </style>
+        <article class="statistics">
+            <div class="container statistics__container">
+                <section class="statistics__content">
+                    <h2 class="statistics__title">
+                        Estamos buscando 
+                        <span class="statistics__title_red">a los mejores,</span> 
+                        <span class="statistics__title_light">¡te queremos a ti!</span>
+                    </h2>
+    
+                    <a href="#" class="statistics__btn">¡Únete a nuestra familia!</a>
+    
+                    <h3 class="statistics__subtitle">¿POR QUÉ SER AGENTE RE/MAX?</h3>
+                    <p class="statistics__text">¡Mayor productividad, mayores comisiones!</p>
+                    <p class="statistics__text">Con RE/MAX, los Agentes sacan el máximo partido a su trabajo, obteniendo siemore las mayores comisiones del mercado. En este sentido, existe una regla de oro: cuanto te esfuerces, más dinero ganas</p>
+    
+                    <div class="statistics__data">
+                        <div class="statistics__data_item">
+                            <span class="statistics__data__title">1973</span>
+                            <span class="statistics__data__description">Fundada</span>
+                        </div>
+                        <div class="statistics__data_item">
+                            <span class="statistics__data__title">+400</span>
+                            <span class="statistics__data__description">Agentes</span>
+                        </div>
+                        <div class="statistics__data_item">
+                            <span class="statistics__data__title">17</span>
+                            <span class="statistics__data__description">Oficinas a Nivel Nacional</span>
+                        </div>
+                        <div class="statistics__data_item">
+                            <span class="statistics__data__title">+138 mil</span>
+                            <span class="statistics__data__description">Agentes a Nivel Global</span>
+                        </div>
+                        <div class="statistics__data_item">
+                            <span class="statistics__data__title">+10 mil</span>
+                            <span class="statistics__data__description">Propiedades para Vender</span>
+                        </div>
+                        <div class="statistics__data_item">
+                            <span class="statistics__data__title">15.2</span>
+                            <span class="statistics__data__description">Años Promedio</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="statistics__background">
+                    <img src="./assets/images/remaxrd_agent.png" alt="Agente RE/MAX RD" class="statistics__background_image">
+                </section>
+            </div>
+        </article>
+
+        <!-- ************************** END STATISTICS ************************** -->
+
+
+        <!-- ************************** MOTIVATION ************************** -->
+        <style>
+            .motivation {
+                background-color: #fff;
+                border-radius: 200px 0px 0px 0px;
+                padding: 85px 0;
+            }
+            .motivation__container {
+                display: flex;
+                justify-content: space-around;
+            }
+            .motivation__video_item:nth-of-type(1) {
+                margin-bottom: 45px;
+            }
+            .motivation__thumbnail {
+                display: block;
+                width: 211px;
+                height: 147px;
+                border-radius: 30px;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin-bottom: 10px;
+            }
+            .motivation__videos_text {
+                display: block;
+                font-size: 0.875rem;
+                font-weight: 500;
+                text-align: center;
+            }
+            .motivation__description__btn,
+            .motivation__description__btn:hover,
+            .motivation__description__btn:active,
+            .motivation__description__btn:visited,
+            .motivation__link,
+            .motivation__link:hover,
+            .motivation__link:active,
+            .motivation__link:visited {
+                text-decoration: none;
+            }
+            .motivation__description {
+                max-width: 600px;
+                align-self: center;
+            }
+            .motivation__description__title {
+                max-width: 294px;
+                font-size: 1.438rem;
+                font-weight: 700;
+                text-align: left;
+                text-transform: none;
+                margin-bottom: 24px;
+            }
+            .motivation__description__text {
+                font-size: 0.938rem;
+                font-weight: 700;
+                line-height: 18px;
+                color: #99999B;
+                margin-bottom: 20px;
+            }
+            .motivation__description__btn {
+                display: flex;
+                width: 265px;
+                height: 40px;
+                justify-content: center;
+                align-items: center;
+                color: #fff;
+                background-color: #E92027;
+                font-size: 0.938rem;
+                font-weight: 700;
+                border-radius: 50px;
+                margin-top: 75px;
+            }
+
+            @media screen and (max-width: 991px) {
+                .motivation {
+                    border-radius: 150px 0px 0px 0px;
+                }
+                .motivation__container {
+                    flex-direction: column;
+                }
+                .motivation__videos {
+                    display: flex;
+                    justify-content: space-evenly;
+                }
+            }
+            @media screen and (max-width: 767px) {
+                .motivation {
+                    border-radius: 50px 0px 0px 0px;
+                }
+            }
+            @media screen and (max-width: 480px) {
+                .motivation__videos {
+                    flex-direction: column;
+                    align-items: center;
+                    margin-bottom: 50px;
+                }
+            }
+        </style>
+        <article class="motivation">
+            <div class="container motivation__container">
+                <section class="motivation__videos">
+                    <div class="motivation__video_item">
+                        <a href="#" class="motivation__link">
+                            <span class="motivation__thumbnail" style="background-image: url('./assets/images/remaxrd_agent1.png');"></span>
+                            <span class="motivation__videos_text">VER VIDEO</span>
+                        </a>
+                    </div>
+                    <div class="motivation__video_item">
+                        <a href="" class="motivation__link">
+                            <span class="motivation__thumbnail" style="background-image: url('./assets/images/remaxrd_agent2.png');"></span>
+                            <span class="motivation__videos_text">VER VIDEO</span>
+                        </a>
+                    </div>
+                </section>
+
+                <section class="motivation__description">
+                    <h2 class="motivation__description__title">La motivación es la clave en todo emprendimiento</h2>
+                    <p class="motivation__description__text">Cuando te unes a RE/MAX inicias un camino -ya recorrido y comprobado- por el que muchos de nuestros asociados alcanzan comisiones superiores al medio millón de dólares anuales.</p>
+                    <p class="motivation__description__text">Te acompañamos personalmente y ponemos a tu disposición el mejor plan de entrenamiento inmobiliario. Te sentirás en familia. Te guiaremos paso a paso para que perseveres y logres tu libertad profesional y financiera.</p>
+                    <a href="#" class="motivation__description__btn">PREGUNTAS FRECUENTES</a>
+                </section>
+            </div>
+        </article>
+
+        <!-- ************************** END MOTIVATION ************************** -->
         
 
         <!-- ************************** FOOTER ************************** -->
