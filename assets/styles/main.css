@@ -350,7 +350,7 @@
 
 
 /* END NORMALIZE */
-@font-face {
+/* @font-face {
     font-family: 'Gotham';
     src: url("../fonts/GothamBold.ttf") format('truetype');
     font-weight: 700;
@@ -369,7 +369,7 @@
     font-family: 'Gotham';
     src: url("../fonts/GothamMedium.ttf") format('truetype');
     font-weight: 500;
-}
+} */
 
 :root {
     --color-primary: #1F3564;
@@ -381,7 +381,7 @@
     padding: 0;
     box-sizing: border-box;
     color: var(--color-primary);
-    font-family: 'Gotham', 'Inter', sans-serif;;
+    font-family: 'Inter', sans-serif;;
     font-weight: 400;
 }
 body {
